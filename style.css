@@ -1,126 +1,95 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+body{ 
+	background-color:white;
+}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+.wrapper{
+    margin: auto;
+    width: 50%;
+    margin-bottom: 6vw;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+section{
+	padding-top: 20px;
 }
 
 
+/* SHIT MED TEKST OG SÅNN */
+p,h1,h2,h3,li,b,strong {
+	font-family: 'Lato';
+	color: black;
+}
 
+h1{
+	color: #5B9BD5;
+}
 
+h2, h3, strong{
+	color: #4DC58D;
+}
 
-/*MIN KODE*/
+hr{
+	border: 0.4px solid #5B9BD5;
+}
 
+/* IKONVISNING */
 
+h2#client:before {
+	content: url('img/client.png');
+	padding-right: 10px;
+}
 
+h2#purpgoals:before {
+	content: url('img/purpgoals.png');
+	padding-right: 10px;
+}
 
+h2#requirements:before {
+	content: url('img/requirements.png');
+	padding-right: 10px;
+	vertical-align: middle;
+}
 
-
-body{
-    font-family: 'Lato', sans-serif;
+h2#location:before {
+	content: url('img/location.png');
+	padding-right: 10px;
+	vertical-align: middle;
 }
 
 
-
-header{
-    height: 100px;
-    background-color: rgb(77, 197, 213);
-    position: relative;
-    z-index: 1;
+/* OVERLAYS */
+#overlayL{
+	position: fixed;
+	width: 20%;
+	left: 0;
+	top: 0;
+	margin-left: -40px;
+	margin-top: -40px;
 }
 
-header h1{
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-    font-size: 2em;
-    margin: 0 40px;
+#overlayR{
+	position: fixed;
+	width: 20%;
+	right: 0;
+	bottom: 0;
+	margin-right: -40px;
+	margin-bottom: -20px;
 }
 
-header ul{
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(0,-50%);
-    margin: 0 40px;
-}
-
-header ul li{
-    float: left;
-    margin: 30px;
-}
-
-header ul li a{
-    text-decoration: none;
-    color: black;
-    padding: 3px;
-    border: 1px solid rgba(0, 0, 0, 0);
-}
-
-header ul li a:hover{
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
-    transition: 1s;
+#timetag{
+	background-color: #4DC58D;
+	display: table;
+	width: 7vw;
+	height: 3vw;
+	position: fixed;
+	top: 0;
+	right: 25.5vw;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+	font-size:calc(12px + 0.5vw);
+	}
+	
+#timetag>p{
+	margin: 1vw;
 }
 
 
-
-
-/*Bilde*/
-
-
-.forsidebilde{
-    height: calc(100vh - 100px);
-    width: 100%;
-    position: relative;
-
-    background-color: bisque;
-    background-image: url(bilbutikk.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-    box-shadow: inset 1px 1px 10px black;
-}
