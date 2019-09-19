@@ -1,5 +1,5 @@
 body{ 
-	background-color: black;
+	background-color: white;
 }
 
 .wrapper{
@@ -17,9 +17,9 @@ header{
 }
 
 /* SHIT MED TEKST OG SÅNN */
-p,h1,h2,h3,li,b,strong {
+p,h1,h2,h3,h4,li,b,strong {
 	font-family: 'Lato';
-	color: white;
+	color: black;
 	font-size:calc(7px + 0.5vw);
 }
 
