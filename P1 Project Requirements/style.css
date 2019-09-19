@@ -1,10 +1,19 @@
+<<<<<<< HEAD
 body{ 
 	background-color:white;
 }
 
+||||||| merged common ancestors
+=======
+body{ 
+	background-color: black;
+}
+
+>>>>>>> 5b289cad63254cb7bb7029bf8448a226f28e2993
 .wrapper{
     margin: auto;
     width: 50%;
+<<<<<<< HEAD
     margin-bottom: 6vw;
 }
 
@@ -53,8 +62,47 @@ h2#location:before {
 	content: url('img/location.png');
 	padding-right: 10px;
 	vertical-align: middle;
+||||||| merged common ancestors
+=======
+    margin-bottom: 7%;
 }
 
+section{
+	padding-top: 20px;
+}
+
+header{
+	padding-top: 20px;
+}
+
+/* SHIT MED TEKST OG SÅNN */
+p,h1,h2,h3,li,b,strong {
+	font-family: 'Lato';
+	color: white;
+	font-size:calc(7px + 0.5vw);
+}
+
+h1{
+	color: #5B9BD5;
+	font-size:calc(17px + 0.5vw);
+}
+
+strong{
+	font-size:calc(7px + 0.5vw);
+	color: #4DC58D;
+}
+
+h2, h3{
+	color: #4DC58D;
+	font-size:calc(9px + 0.5vw);
+}
+
+hr{
+	border: 0.4px solid #5B9BD5;
+>>>>>>> 5b289cad63254cb7bb7029bf8448a226f28e2993
+}
+
+<<<<<<< HEAD
 
 /* OVERLAYS */
 #overlayL{
@@ -93,3 +141,70 @@ h2#location:before {
 }
 
 
+||||||| merged common ancestors
+.section{
+    padding: 30px;
+}
+=======
+/* IKONVISNING */
+
+#client{
+	padding-right: 1%;
+	width:calc(8px + 1vw);
+
+}
+
+#purpgoals{
+	padding-right: 1%;
+	width:calc(15px + 1.5vw);
+}
+
+#requirements{
+	padding-right: 1%;
+	width:calc(8px + 1.5vw);
+	vertical-align: middle;
+}
+
+#location{
+	padding-right: 1%;
+	width:calc(8px + 1.5vw);
+	vertical-align: middle;
+}
+
+
+/* OVERLAYS */
+#overlayL{
+	position: fixed;
+	width: 20%;
+	left: 0;
+	top: 0;
+	margin-left: -40px;
+	margin-top: -40px;
+}
+
+#overlayR{
+	position: fixed;
+	width: 20%;
+	right: 0;
+	bottom: 0;
+	margin-right: -40px;
+	margin-bottom: -20px;
+}
+
+#timetag{
+	background-color: #4DC58D;
+	display: table;
+	width: 7vw;
+	height: 3vw;
+	position: fixed;
+	top: 0;
+	right: 25vw;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+	font-size:calc(12px + 0.5vw);
+	}
+	
+#timetag>p{
+	margin: 1vw;
+}
+>>>>>>> 5b289cad63254cb7bb7029bf8448a226f28e2993
