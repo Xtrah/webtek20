@@ -1,69 +1,10 @@
-<<<<<<< HEAD
-body{ 
-	background-color:white;
-}
-
-||||||| merged common ancestors
-=======
 body{ 
 	background-color: black;
 }
 
->>>>>>> 5b289cad63254cb7bb7029bf8448a226f28e2993
 .wrapper{
     margin: auto;
     width: 50%;
-<<<<<<< HEAD
-    margin-bottom: 6vw;
-}
-
-section{
-	padding-top: 20px;
-}
-
-
-/* SHIT MED TEKST OG SÅNN */
-p,h1,h2,h3,li,b,strong {
-	font-family: 'Lato';
-	color: black;
-}
-
-h1{
-	color: #5B9BD5;
-}
-
-h2, h3, strong{
-	color: #4DC58D;
-}
-
-hr{
-	border: 0.4px solid #5B9BD5;
-}
-
-/* IKONVISNING */
-
-h2#client:before {
-	content: url('img/client.png');
-	padding-right: 10px;
-}
-
-h2#purpgoals:before {
-	content: url('img/purpgoals.png');
-	padding-right: 10px;
-}
-
-h2#requirements:before {
-	content: url('img/requirements.png');
-	padding-right: 10px;
-	vertical-align: middle;
-}
-
-h2#location:before {
-	content: url('img/location.png');
-	padding-right: 10px;
-	vertical-align: middle;
-||||||| merged common ancestors
-=======
     margin-bottom: 7%;
 }
 
@@ -99,53 +40,8 @@ h2, h3{
 
 hr{
 	border: 0.4px solid #5B9BD5;
->>>>>>> 5b289cad63254cb7bb7029bf8448a226f28e2993
 }
 
-<<<<<<< HEAD
-
-/* OVERLAYS */
-#overlayL{
-	position: fixed;
-	width: 20%;
-	left: 0;
-	top: 0;
-	margin-left: -40px;
-	margin-top: -40px;
-}
-
-#overlayR{
-	position: fixed;
-	width: 20%;
-	right: 0;
-	bottom: 0;
-	margin-right: -40px;
-	margin-bottom: -20px;
-}
-
-#timetag{
-	background-color: #4DC58D;
-	display: table;
-	width: 7vw;
-	height: 3vw;
-	position: fixed;
-	top: 0;
-	right: 25.5vw;
-	text-align: center;
-	border-radius: 0 0 10px 10px;
-	font-size:calc(12px + 0.5vw);
-	}
-	
-#timetag>p{
-	margin: 1vw;
-}
-
-
-||||||| merged common ancestors
-.section{
-    padding: 30px;
-}
-=======
 /* IKONVISNING */
 
 #client{
@@ -207,4 +103,3 @@ hr{
 #timetag>p{
 	margin: 1vw;
 }
->>>>>>> 5b289cad63254cb7bb7029bf8448a226f28e2993
