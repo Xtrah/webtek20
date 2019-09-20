@@ -1,5 +1,5 @@
 body{ 
-	background-color: white;
+	background-color: black;
 }
 
 .wrapper{
@@ -16,26 +16,31 @@ header{
 	padding-top: 20px;
 }
 
-/* SHIT MED TEKST OG SÅNN */
-p,h1,h2,h3,h4,li,b,strong {
+/* SPACING LISTEELEMENTER */
+ol > li{
+	padding-bottom: 8px;
+}
+
+/* TEKST */
+p,h1,h2,h3,li,b,strong {
 	font-family: 'Lato';
-	color: black;
-	font-size:calc(7px + 0.5vw);
+	color: white;
+	font-size:calc(10px + 0.5vw);
 }
 
 h1{
 	color: #5B9BD5;
-	font-size:calc(17px + 0.5vw);
+	font-size:calc(22px + 0.5vw);
 }
 
 strong{
-	font-size:calc(7px + 0.5vw);
-	color: #4DC58D;
+	font-size:calc(10px + 0.5vw);
+	color: #5B9BD5;
 }
 
 h2, h3{
 	color: #4DC58D;
-	font-size:calc(9px + 0.5vw);
+	font-size:calc(17px + 0.5vw);
 }
 
 hr{
@@ -47,10 +52,14 @@ hr{
 #client{
 	padding-right: 1%;
 	width:calc(8px + 1vw);
-
 }
 
 #purpgoals{
+	padding-right: 1%;
+	width:calc(15px + 1.5vw);
+}
+
+#content{
 	padding-right: 1%;
 	width:calc(15px + 1.5vw);
 }
