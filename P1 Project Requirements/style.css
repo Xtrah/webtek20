@@ -47,6 +47,7 @@ hr{
 	border: 0.4px solid #5B9BD5;
 }
 
+
 /* IKONVISNING */
 
 #client{
@@ -72,12 +73,18 @@ hr{
 
 #location{
 	padding-right: 1%;
-	width:calc(8px + 1.5vw);
+	width:calc(8px + 1vw);
 	vertical-align: middle;
+}
+
+#difficulties{
+	padding-right: 1%;
+	width:calc(8px + 0.2vw);
 }
 
 
 /* OVERLAYS */
+
 #overlayL{
 	position: fixed;
 	width: 20%;
@@ -107,8 +114,11 @@ hr{
 	text-align: center;
 	border-radius: 0 0 10px 10px;
 	font-size:calc(12px + 0.5vw);
-	}
-	
-#timetag>p{
-	margin: 1vw;
 }
+	
+#timetag p{
+	margin: 1vw;
+	color: black;
+	font-weight: bolder;
+}
+
