@@ -38,9 +38,14 @@ strong{
 	color: #5B9BD5;
 }
 
-h2, h3{
+h2{
 	color: #4DC58D;
 	font-size:calc(17px + 0.5vw);
+}
+
+h3{
+	color: #4DC58D;
+	font-size:calc(13px + 0.5vw);
 }
 
 hr{
@@ -87,7 +92,7 @@ hr{
 
 #overlayL{
 	position: fixed;
-	width: 20%;
+	width:calc(120px + 10%);
 	left: 0;
 	top: 0;
 	margin-left: -40px;
@@ -96,7 +101,7 @@ hr{
 
 #overlayR{
 	position: fixed;
-	width: 20%;
+	width:calc(120px + 10%);
 	right: 0;
 	bottom: 0;
 	margin-right: -40px;
