@@ -4,10 +4,9 @@
 **GitHub Repository**  
 [github.com/Xtrah/webtek20](https://github.com/Xtrah/webtek20)
 
-**Slack & Trello**  
+**Collaboration**  
 [webtek20 - onlinentnu.slack.com](https://onlinentnu.slack.com/messages/GMYSXL3PX)  
 [Team 20 - trello.com](https://trello.com/b/MVa85Z1F)
-
 
 ## Project Stages
 - P1 Project Requirements  
