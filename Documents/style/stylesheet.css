@@ -1,7 +1,105 @@
 body{ 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 	background-color: black;
 }
 
+/* Style for the responsive navBurger. */
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	margin: auto;
+	background-color: black;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	margin: 0;
+}
+.nav-links{
+	list-style: none;
+}
+.nav-links a{
+	color: #4DC58D;
+	text-decoration: none;
+	letter-spacing: 2.2px;
+	font-size: 18px;
+}
+
+.burger{
+	display: none;
+	cursor: pointer;
+}
+
+.burger div{
+	width: 25px;
+	height: 2px;
+	background-color: #4DC58D;
+	margin: 5px;
+	transition: all 0.3s ease-in;
+}
+
+/* burger animation upon click */
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Responsive navBurger settings, mobile*/
+@media screen and (max-width:768px){
+	body{
+		overflow-x: hidden;
+	}
+	.nav-links{
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 35%;
+		transform: translateX(100%);
+		transition: transform 0.3s ease-in;
+	}
+	.nav-links li{
+		opacity: 0;
+	}
+	.burger{
+		display: block;
+	}
+}
+
+.nav-active{
+	transform: translateX(0);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+/* Original css styles  */
 .wrapper{
     margin: auto;
     width: 50%;
@@ -108,7 +206,7 @@ hr{
 	margin-bottom: -20px;
 }
 
-#timetag{
+/* #timetag{
 	background-color: #4DC58D;
 	display: table;
 	width: 7vw;
@@ -125,5 +223,5 @@ hr{
 	margin: 1vw;
 	color: black;
 	font-weight: bolder;
-}
+} */
 
