@@ -58,37 +58,6 @@ nav{
 	transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Responsive navBurger settings, mobile*/
-@media screen and (max-width:768px){
-	body{
-		overflow-x: hidden;
-	}
-	nav{
-		justify-content: flex-end;
-		margin-right: 10%;
-		
-	}
-	.nav-links{
-		position: absolute;
-		right: 0px;
-		height: 92vh;
-		top: 8vh;
-		background-color: black;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 35%;
-		transform: translateX(100%);
-		transition: transform 0.3s ease-in;
-	}
-	.nav-links li{
-		opacity: 0;
-	}
-	.burger{
-		display: block;
-	}
-}
-
 .nav-active{
 	transform: translateX(0);
 }
@@ -210,6 +179,43 @@ hr{
 	margin-right: -40px;
 	margin-bottom: -20px;
 }
+
+/* Responsiveness + navBurger settings mobile*/
+@media screen and (max-width:768px){
+	body{
+		overflow-x: hidden;
+	}
+	.wrapper{
+		width: 80%;
+		margin: auto;
+		margin-bottom: 7%;
+	}
+	nav{
+		justify-content: flex-end;
+		margin-right: 10%;
+		
+	}
+	.nav-links{
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 35%;
+		transform: translateX(100%);
+		transition: transform 0.3s ease-in;
+	}
+	.nav-links li{
+		opacity: 0;
+	}
+	.burger{
+		display: block;
+	}
+}
+
 
 /* #timetag{
 	background-color: #4DC58D;
