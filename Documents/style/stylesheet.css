@@ -63,6 +63,11 @@ nav{
 	body{
 		overflow-x: hidden;
 	}
+	nav{
+		justify-content: flex-end;
+		margin-right: 10%;
+		
+	}
 	.nav-links{
 		position: absolute;
 		right: 0px;
