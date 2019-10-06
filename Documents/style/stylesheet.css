@@ -69,6 +69,11 @@ section{
 header{
 	padding-top: 20px;
 }
+/*Fjerer listestilen på elementene i "Our Client" */
+.clientList{
+	list-style: none;
+}
+
 /* SPACING LISTEELEMENTER */
 ol > li{
 	padding-bottom: 8px;
