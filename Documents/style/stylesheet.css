@@ -1,7 +1,8 @@
-body{ 
-	margin: 0;
+*{
 	padding: 0;
-	box-sizing: border-box;
+	padding-inline-start: 0; 
+}
+body{ 
 	background-color: black;
 }
 
@@ -13,18 +14,14 @@ nav{
 	min-height: 8vh;
 	margin: auto;
 	background-color: black;
-	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 }
-
 .nav-links{
 	display: flex;
 	justify-content: space-around;
 	width: 70%;
 	margin: 0;
-}
-.nav-links{
 	list-style: none;
 }
 .nav-links a{
@@ -58,21 +55,6 @@ nav{
 	transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.nav-active{
-	transform: translateX(0);
-}
-
-@keyframes navLinkFade{
-	from{
-		opacity: 0;
-		transform: translateX(50px);
-	}
-	to{
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
-
 /* Original css styles  */
 .wrapper{
     margin: auto;
@@ -87,7 +69,6 @@ section{
 header{
 	padding-top: 20px;
 }
-
 /* SPACING LISTEELEMENTER */
 ol > li{
 	padding-bottom: 8px;
@@ -185,16 +166,6 @@ hr{
 	body{
 		overflow-x: hidden;
 	}
-	.wrapper{
-		width: 80%;
-		margin: auto;
-		margin-bottom: 7%;
-	}
-	nav{
-		justify-content: flex-end;
-		margin-right: 10%;
-		
-	}
 	.nav-links{
 		position: absolute;
 		right: 0px;
@@ -214,8 +185,26 @@ hr{
 	.burger{
 		display: block;
 	}
+	.wrapper{
+		width: 90%;
+		margin: auto;
+		margin-bottom: 7%;
+	}
 }
 
+.nav-active{
+	transform: translateX(0);
+}
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
 
 /* #timetag{
 	background-color: #4DC58D;
