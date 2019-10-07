@@ -1,6 +1,7 @@
 *{
 	padding: 0;
 	padding-inline-start: 0; 
+	box-sizing: border-box;
 }
 body{ 
 	background-color: black;
@@ -110,6 +111,11 @@ hr{
 	border: 0.4px solid #5B9BD5;
 }
 
+#nav_structure{
+	margin: auto;
+	width: 100%;
+
+}
 
 /* IKONVISNING */
 
@@ -169,23 +175,23 @@ hr{
 /* Responsiveness + navBurger settings mobile*/
 @media screen and (max-width:768px){
 	body{
-		overflow-x: none;
+		overflow-x: hidden;
 	}
 	nav{
 		justify-content: flex-end;
 	}
 	.nav-links{
-		display: none; /*Display none gjør at det ikke går an å scrolle til høyre. Tar display flex når .nav-active*/
 		position: absolute;
 		right: 0px;
 		height: 92vh;
 		top: 8vh;
 		background-color: black;
+		display: none;
 		flex-direction: column;
 		align-items: center;
-		width: 35%;
+		width: 40%;
 		transform: translateX(100%);
-		transition: transform 0.3s ease-in;
+		transition: transform 0.1s ease-in;
 	}
 	.nav-links li{
 		opacity: 0;
@@ -202,9 +208,8 @@ hr{
 }
 
 .nav-active{
-	display: flex;
 	transform: translateX(0);
-	
+	display: flex;
 }
 @keyframes navLinkFade{
 	from{
@@ -235,4 +240,48 @@ hr{
 	color: black;
 	font-weight: bolder;
 } */
+
+/*TABLE DESIGN*/
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+  
+td, th {
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+tr:nth-child(odd) {
+	background-color: #adadad;
+}
+
+table{
+	border: 2px solid white;
+}
+tr, th{
+	border: 1px solid black;
+}
+table #first{
+	background-color: #4DC58D;
+	font-size: 1.2em;
+}
+
+
+
+
+/*LIST OF FILE AND FOLDERS*/
+ul{
+	padding: 0 0 0 30px;
+}
+ul ul{
+	padding: 0 0 0 20px;
+}
+
+
 
