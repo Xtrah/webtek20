@@ -169,18 +169,18 @@ hr{
 /* Responsiveness + navBurger settings mobile*/
 @media screen and (max-width:768px){
 	body{
-		overflow-x: hidden;
+		overflow-x: none;
 	}
 	nav{
 		justify-content: flex-end;
 	}
 	.nav-links{
+		display: none; /*Display none gjør at det ikke går an å scrolle til høyre. Tar display flex når .nav-active*/
 		position: absolute;
 		right: 0px;
 		height: 92vh;
 		top: 8vh;
 		background-color: black;
-		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 35%;
@@ -202,7 +202,9 @@ hr{
 }
 
 .nav-active{
+	display: flex;
 	transform: translateX(0);
+	
 }
 @keyframes navLinkFade{
 	from{
