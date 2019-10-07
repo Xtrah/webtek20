@@ -232,3 +232,47 @@ hr{
 	font-weight: bolder;
 } */
 
+/*TABLE DESIGN*/
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+  
+td, th {
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+tr:nth-child(odd) {
+	background-color: #adadad;
+}
+
+table{
+	border: 2px solid white;
+}
+tr, th{
+	border: 1px solid black;
+}
+table #first{
+	background-color: #4DC58D;
+	font-size: 1.2em;
+}
+
+
+
+
+/*LIST OF FILE AND FOLDERS*/
+ul{
+	padding: 0 0 0 30px;
+}
+ul ul{
+	padding: 0 0 0 20px;
+}
+
+
+
