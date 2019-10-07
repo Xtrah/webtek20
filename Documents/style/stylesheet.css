@@ -171,6 +171,11 @@ hr{
 	margin-bottom: -20px;
 }
 
+/* List of minimum requirements */ 
+li{
+	margin: 0 0 0.5em 0;
+}
+
 /* Responsiveness + navBurger settings mobile*/
 @media screen and (max-width:768px){
 	body{
