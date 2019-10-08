@@ -106,9 +106,10 @@
             </section>
 
             <section id="layout">
-                <h2><img src="img/appearance.png" alt="page-layout-icon" id="layout-icon"> Page layout and appearance</h2>
+                <h2><img src="img/appearance.png" alt="page-layout-icon" id="layout-icon">Page layout and appearance</h2>
                 <div class="hrReplacement"></div>
-                <p>
+
+              <p>
                     The universal design is oriented around making the user interested enough to make contact and ask for a meeting. 
                     The hierarchical structure is organized so that the website is like a modern IKEA store. 
                     The client will be presented with information in the order we want to. 
@@ -119,9 +120,30 @@
                     You can choose if you want to navigate by scrolling or just by using the navbar. The logo is also included in the upper left corner.
                 </p>
                 <img src="img/content_img/Layout.png" alt="layout img" id="content-img">
-                <p>
 
-                </p>
+                <ul>
+                    <li>Font: will manly use 'Poppins' and 'sans-serif' as backup-font. We will use different font-sizes based on the viewport width and type of text (header, paragraph, etc.)</li>
+                    <li>Color scheme</li>
+                    <ul>
+                        <li>Text: white</li>
+                        <li>Background: black</li>
+                        <li>Links: standard colors, blue or purple</li>
+                        <li>Shadows: Some headers and other text will have black/white faded shadows. For example when text is over images. Will make the text more visible</li>
+                        <li>Headers and navbar: Blue (RGB 91 155 213), Light Green (RGB 77 197 141)</li>
+                    </ul>
+                    <li>Body width: 100%</li>
+                    <li>Navbar: Sticky posistion at the top of the site. Will show where you are on the page. Will include links to all the sections on the page. Black background, white text, Light Green (RGB 77 197 141) on hover.</li>
+                    <li>Logo: Visible in the navbar on the front page.</li>
+                    <li>Footer: copyright statement, phone number and logo</li>
+                    <li>Backgroundimage: </li>
+                    <li>Video: Front page will include a video</li>
+                    <li>Images: Images showcasing the product in use</li>
+                    <li>Backgroundimage: Blury backgroundimage to show the setting of the contact form</li>
+                    <li>Pylon: The contact form will be inside a pylon.</li>
+                    <li>Headers: Most section will include a header with larger font size and color Blue (RGB 91 155 213)</li>
+                    
+                </ul>
+
             </section>
             
             <section id="content">
@@ -287,28 +309,29 @@
                 </h2>
                 <div class="hrReplacement"></div>
                 <p>
-                    We will follow the organizational scheme and the work division table.
+                    We will follow the organizational scheme and the work division table. The organizational scheme will show where files will be stored. The work division table will show what will be done by who and the deadline.
                 </p>
 
-                <h3>List of Files and Folders</h3>
+                <h3>Organizational scheme</h3>
+                <p>List of file and folders</p>
 
                 <ul>
                     <li>frontpage.html</li>
-                    <li>our_business.html</li>
-                    <li>benefits.html</li>
-                    <li>maps.html</li>
+                    <li>what_we_offer.html</li>
                     <li>gallery.html</li>
-                    <li>our_technology.html</li>
-                    <li>contact_us.html</li>
+                    <li>our_business.html</li>
+                    <li>our_customers.html</li>
+                    <li>contact.html</li>
                     <br>
 
-                    <li>images/</li>                   
+                    <li>img/</li>                   
                     <ul>
                         <li>galleryimg1</li>
                         <li>galleryimg2</li>
                         <li>galleryimg3</li>
-                        ...
+                        <li>...</li>
                     </ul>
+                    <br>
 
                     <li>video/</li>
                     <ul>
@@ -320,12 +343,13 @@
                     <ul>
                         <li>app.js</li>
                     </ul>
+                    <br>
 
                     <li>stylesheet.css</li>
 
                 </ul>
 
-                <h3>Work division and deadlines</h3>
+                <h3>Work division table</h3>
 
                 <table>
                     <tr id="first">
@@ -334,58 +358,57 @@
                         <th>In charge</th>
                         <th>Deadline</th>
                     </tr>
+                    
                     <tr>
                         <th>frontpage.html</th>
-                        <th>The homepage</th>
+                        <th>The front page of our clients site. Introduces the customer to the products and services.</th>
                         <th>Livia and David</th>
                         <th>03.11.2019</th>
                     </tr>
 
                     <tr>
-                        <th>our_business.html</th>
-                        <th>An "Our business" section will contain a concise text about Hassel Software and what kind of company it is. The goal is for potential customers get a clear idea of the company.</th>
+                        <th>what_we_offer.html</th>
+                        <th>This section of the page will present the modularity and scalability of the products our customer is selling. </th>
                         <th>Henrik and Mats</th>
                         <th>03.11.2019</th>
                     </tr>
 
                     <tr>
-                        <th>benefits.html</th>
-                        <th>A «Benefits» section with simple information about what benefits using the products Hassel Software provides. For example branding, standardization and efficiency. This will be short and concise to inform what the base benefits are. This will emphasize on key selling points of the product.</th>
+                        <th>gallery.html</th>
+                        <th>Images of the product in use.</th>
+                        <th>Henrik and Vemund</th>
+                        <th>03.11.2019</th>
+                    </tr>
+
+
+                    <tr>
+                        <th>our_business.html</th>
+                        <th>A more in depth introduction to the business.</th>
                         <th>Vemund and Andreas</th>
                         <th>03.11.2019</th>
                     </tr>
 
                     <tr>
-                        <th>maps.html</th>
-                        <th>A map showing the location of live installments of the products, allowing the customer to get hands on experience.</th>
-                        <th>Livia and Mats</th>
+                        <th>our_customers.html</th>
+                        <th>Testaminials from some of the customers using the products.</th>
+                        <th>David and Livia</th>
+                        <th>03.11.2019</th>
+                    </tr>
+                    
+
+                    <tr>
+                        <th>contact_us.html</th>
+                        <th>A section where the user can contact the business through a form. This allows the site to convert interested visitors into meetings, and creating potential customers.</th>
+                        <th>Vemund and Mats</th>
                         <th>03.11.2019</th>
                     </tr>
 
-                    <tr>
-                        <th>Image gallery</th>
-                        <th>A gallery-section with pictures of the products used in the real world today. This way customers can see how the solutions have previously been applied and what possibilities it offers.</th>
-                        <th>Henrik and Vemund</th>
-                        <th>03.11.2019</th>
-                    </tr>
 
-                    <tr>
-                        <th>Our technology</th>
-                        <th>An «Our technology» section with information about what kinds of technologies Hassel Software is utilizing. This way the user will know how customizable and innovative the product can be.</th>
-                        <th>Andreas and David</th>
-                        <th>03.11.2019</th>
-                    </tr>
-
-                    <tr>
-                        <th>Contact us</th>
-                        <th>A "Contact us" section where the user can contact the business through a form. This allows the site to convert interested visitors into meetings, and creating potential customers.</th>
-                        <th>Vemund and Mads</th>
-                        <th>03.11.2019</th>
-                    </tr>
+                    
 
                     <tr>
                         <th>app.js</th>
-                        <th>A javascript file including code for a navBurger</th>
+                        <th>A javascript file including code for a navBurger and other features</th>
                         <th>All</th>
                         <th>03.11.2019</th>
                     </tr>
@@ -404,8 +427,7 @@
                         <th>04.11.2019</th>
                     </tr>
 
-
-
+                
                 </table>
 
             </section>

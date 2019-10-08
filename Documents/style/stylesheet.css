@@ -194,6 +194,20 @@ code{
 }
 /* Responsiveness + navBurger settings mobile*/
 
+
+
+/* Scrollbar */
+body::-webkit-scrollbar{
+	width: 0.75em;
+}
+body::-webkit-scrollbar-track{
+	background-color: rgba(77, 197, 141, 0.2);
+}
+body::-webkit-scrollbar-thumb{
+	background-color: rgba(77, 197, 141, 0.8);
+	border-radius: 0.1em;
+}
+
 @media screen and (max-width:768px){
 	body{
 		overflow-x: hidden;
@@ -263,29 +277,27 @@ code{
 /*TABLE DESIGN*/
 
 table {
-	font-family: arial, sans-serif;
+	margin: 50px 0;
+	font-family: 'Poppins', sans-serif;
+	color: white;
 	border-collapse: collapse;
 	width: 100%;
+	font-size: 0.8em;
 }
 td, th {
 	text-align: left;
 	padding: 8px;
 }
 tr:nth-child(even) {
-	background-color: #dddddd;
+	background-color: black;
 }
 tr:nth-child(odd) {
-	background-color: #adadad;
+	background-color: black;
 }
-table{
-	border: 2px solid white;
-}
-tr, th{
-	border: 1px solid black;
-}
+
 table #first{
-	background-color: #4DC58D;
 	font-size: 1.2em;
+	color: #4DC58D;
 }
 /*LIST OF FILE AND FOLDERS*/
 
