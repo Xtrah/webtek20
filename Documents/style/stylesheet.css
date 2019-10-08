@@ -82,28 +82,31 @@ ol > li{
 }
 /* TEKST */
 p,h1,h2,h3,li,dl,dt,dd,b,strong {
-	font-family: 'Lato';
+	font-family: 'Poppins', sans-serif;
 	color: white;
-	font-size:calc(10px + 0.5vw);
+	font-size:calc(13px + 0.5vw);
 }
 h1{
 	color: #5B9BD5;
-	font-size:calc(22px + 0.5vw);
+	font-size:calc(24px + 0.5vw);
 }
 strong{
-	font-size:calc(10px + 0.5vw);
+	font-size:calc(13px + 0.5vw);
 	color: #5B9BD5;
 }
 h2{
 	color: #4DC58D;
-	font-size:calc(17px + 0.5vw);
+	font-size:calc(20px + 0.5vw);
 }
 h3{
 	color: rgb(77, 197, 141);
-	font-size:calc(13px + 0.5vw);
+	font-size:calc(16px + 0.5vw);
 }
-hr{
-	border: 0.4px solid #5B9BD5;
+.hrReplacement{
+	background-color: #4DC58D;
+	height: 3px;
+	width: 100%;
+	margin-bottom: 10px;
 }
 #nav_structure{
 	margin: auto;
