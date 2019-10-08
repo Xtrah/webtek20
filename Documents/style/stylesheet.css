@@ -243,9 +243,12 @@ hr{
 
 /*TABLE DESIGN*/
 table {
-	font-family: arial, sans-serif;
+	margin: 50px 0;
+	font-family: 'lato';
+	color: white;
 	border-collapse: collapse;
 	width: 100%;
+	font-size: 0.8em;
 }
   
 td, th {
@@ -254,22 +257,16 @@ td, th {
 }
 
 tr:nth-child(even) {
-	background-color: #dddddd;
+	background-color: black;
 }
 
 tr:nth-child(odd) {
-	background-color: #adadad;
+	background-color: black;
 }
 
-table{
-	border: 2px solid white;
-}
-tr, th{
-	border: 1px solid black;
-}
 table #first{
-	background-color: #4DC58D;
 	font-size: 1.2em;
+	color: #4DC58D;
 }
 
 
