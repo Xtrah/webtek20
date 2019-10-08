@@ -118,6 +118,10 @@ h3{
 	padding-right: 1%;
 	width:calc(8px + 1vw);
 }
+#audience-icon{
+	padding-right: 1%;
+	width:calc(15px + 1.5vw);
+}
 #purpgoals-icon{
 	padding-right: 1%;
 	width:calc(15px + 1.5vw);
@@ -320,5 +324,8 @@ ul ul{
 }
 
 #minreq li{
+	list-style: none;
+}
+#ulBastard{
 	list-style: none;
 }
