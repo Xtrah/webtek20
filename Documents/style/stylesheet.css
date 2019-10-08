@@ -270,7 +270,7 @@ body::-webkit-scrollbar-thumb{
 
 table {
 	margin: 50px 0;
-	font-family: 'lato';
+	font-family: 'Poppins', sans-serif;
 	color: white;
 	border-collapse: collapse;
 	width: 100%;
