@@ -122,6 +122,11 @@ h3{
 	padding-right: 1%;
 	width:calc(15px + 1.5vw);
 }
+#layout-icon{
+	padding-right: 1%;
+	width:calc(15px + 1.5vw);
+	vertical-align: middle;
+}
 #content-icon{
 	padding-right: 1%;
 	width:calc(15px + 1.5vw);
@@ -301,4 +306,19 @@ table #first{
 }
 ul ul{
 	padding: 0 0 0 20px;
+}
+
+.content-img{
+	width: 100%;
+	border: 2px solid #5B9BD5;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#fullsitepdf{
+	width: 5vw;
+	align-content: flex-start;
+}
+
+#minreq li{
+	list-style: none;
 }
