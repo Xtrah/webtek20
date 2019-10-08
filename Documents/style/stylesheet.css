@@ -5,8 +5,8 @@
 }
 body{ 
 	background-color: black;
+	margin: 0;
 }
-
 /* Style for the responsive navBurger. */
 nav{
 	display: flex;
@@ -26,23 +26,27 @@ nav{
 	list-style: none;
 }
 .nav-links a{
-	color: #4DC58D;
+	color: whitesmoke;
 	text-decoration: none;
 	letter-spacing: 2.2px;
 	font-size: 18px;
 }
-
 .burger{
 	display: none;
 	cursor: pointer;
 }
-
 .burger div{
 	width: 25px;
 	height: 2px;
 	background-color: #4DC58D;
 	margin: 5px;
 	transition: all 0.3s ease-in;
+}
+a:hover{
+	color: #4DC58D;
+}
+a:active{
+	color: #5B9BD5;
 }
 
 /* burger animation upon click */
@@ -58,15 +62,13 @@ nav{
 
 /* Original css styles  */
 .wrapper{
-    margin: auto;
+	margin: auto;
     width: 50%;
     margin-bottom: 7%;
 }
-
 section{
-	padding-top: 20px;
+	padding-top: 6vh;
 }
-
 header{
 	padding-top: 20px;
 }
@@ -74,84 +76,77 @@ header{
 .clientList{
 	list-style: none;
 }
-
 /* SPACING LISTEELEMENTER */
 ol > li{
 	padding-bottom: 8px;
 }
-
 /* TEKST */
-p,h1,h2,h3,li,b,strong {
+p,h1,h2,h3,li,dl,dt,dd,b,strong {
 	font-family: 'Lato';
 	color: white;
 	font-size:calc(10px + 0.5vw);
 }
-
 h1{
 	color: #5B9BD5;
 	font-size:calc(22px + 0.5vw);
 }
-
 strong{
 	font-size:calc(10px + 0.5vw);
 	color: #5B9BD5;
 }
-
 h2{
 	color: #4DC58D;
 	font-size:calc(17px + 0.5vw);
 }
-
 h3{
-	color: #4DC58D;
+	color: rgb(77, 197, 141);
 	font-size:calc(13px + 0.5vw);
 }
-
 hr{
 	border: 0.4px solid #5B9BD5;
 }
-
 #nav_structure{
 	margin: auto;
 	width: 100%;
-
 }
-
 /* IKONVISNING */
 
-#client{
+#client-icon{
 	padding-right: 1%;
 	width:calc(8px + 1vw);
 }
-
-#purpgoals{
+#purpgoals-icon{
 	padding-right: 1%;
 	width:calc(15px + 1.5vw);
 }
-
-#content{
+#content-icon{
 	padding-right: 1%;
 	width:calc(15px + 1.5vw);
 }
-
-#requirements{
+#nav-icon{
 	padding-right: 1%;
 	width:calc(8px + 1.5vw);
 	vertical-align: middle;
 }
-
-#location{
+#requirements-icon{
+	padding-right: 1%;
+	width:calc(8px + 1.5vw);
+	vertical-align: middle;
+}
+#location-icon{
 	padding-right: 1%;
 	width:calc(8px + 1vw);
 	vertical-align: middle;
 }
-
-#difficulties{
+#difficulties-icon{
 	padding-right: 1%;
 	width:calc(8px + 0.2vw);
 }
-
-
+.contentHeader{
+	color: rgb(91, 162, 228);
+	border-bottom: 3px solid #4DC58D;
+	width: inherit;
+}
 /* OVERLAYS */
 
 #overlayL{
@@ -171,8 +166,40 @@ hr{
 	margin-right: -40px;
 	margin-bottom: -20px;
 }
+/* List of minimum requirements */ 
 
+li{
+	margin: 0 0 0.5em 0;
+}
+/* CODES TYLE */
+
+code{
+	
+	background-color: rgba(77, 197, 141, 0.4);
+	border-radius: 0.15em;
+	padding: 0 0.2em 0 0.2em;
+	box-shadow: inset 0 0 0.1em rgba(77, 197, 141, 0.60);
+	color: whitesmoke;
+	font-family: 'consolas';
+	font-size:calc(8px + 0.5vw);
+	font-weight: 100;
+}
 /* Responsiveness + navBurger settings mobile*/
+
+
+
+/* Scrollbar */
+body::-webkit-scrollbar{
+	width: 0.75em;
+}
+body::-webkit-scrollbar-track{
+	background-color: rgba(77, 197, 141, 0.2);
+}
+body::-webkit-scrollbar-thumb{
+	background-color: rgba(77, 197, 141, 0.8);
+	border-radius: 0.1em;
+}
+
 @media screen and (max-width:768px){
 	body{
 		overflow-x: hidden;
@@ -206,7 +233,6 @@ hr{
 		margin-bottom: 7%;
 	}
 }
-
 .nav-active{
 	transform: translateX(0);
 	display: flex;
@@ -221,7 +247,6 @@ hr{
 		transform: translateX(0px);
 	}
 }
-
 /* #timetag{
 	background-color: #4DC58D;
 	display: table;
@@ -242,6 +267,7 @@ hr{
 } */
 
 /*TABLE DESIGN*/
+
 table {
 	margin: 50px 0;
 	font-family: 'lato';
@@ -250,16 +276,13 @@ table {
 	width: 100%;
 	font-size: 0.8em;
 }
-  
 td, th {
 	text-align: left;
 	padding: 8px;
 }
-
 tr:nth-child(even) {
 	background-color: black;
 }
-
 tr:nth-child(odd) {
 	background-color: black;
 }
@@ -268,17 +291,11 @@ table #first{
 	font-size: 1.2em;
 	color: #4DC58D;
 }
-
-
-
-
 /*LIST OF FILE AND FOLDERS*/
-ul{
+
+#plan ul{
 	padding: 0 0 0 30px;
 }
 ul ul{
 	padding: 0 0 0 20px;
 }
-
-
-
