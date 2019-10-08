@@ -306,3 +306,7 @@ ul ul{
 	width: 5vw;
 	align-content: flex-start;
 }
+
+#minreq li{
+	list-style: none;
+}
