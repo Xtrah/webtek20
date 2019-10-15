@@ -1,0 +1,32 @@
+body{
+	background-color: black;
+	margin: auto;
+}
+
+/* TEKST */
+p,h1,h2,h3,li,b,strong {
+	font-family: 'Lato';
+	color: white;
+	font-size:calc(10px + 0.5vw);
+	font-family: 'Poppins', sans-serif;
+}
+
+h1{
+	color: #5B9BD5;
+	font-size:calc(22px + 3vw);
+	font-family: 'Poppins', sans-serif;
+	margin: auto;
+}
+
+strong{
+	font-size:calc(10px + 0.5vw);
+	color: #5B9BD5;
+	font-family: 'Poppins', sans-serif;
+}
+
+h2, h3{
+	color: #4DC58D;
+	font-size:calc(17px + 0.5vw);
+	font-family: 'Poppins', sans-serif;
+}
+
