@@ -5,17 +5,19 @@ body{
 
 /* TEKST */
 p,h1,h2,h3,li,b,strong {
-	font-family: 'Lato';
 	color: white;
 	font-size:calc(10px + 0.5vw);
 	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	text-align: center;
 }
 
 h1{
 	color: #5B9BD5;
-	font-size:calc(22px + 3vw);
+	font-size:calc(42px + 3vw);
 	font-family: 'Poppins', sans-serif;
-	margin: auto;
+	font-weight: 700;
+	text-align: center;
 }
 
 strong{
@@ -24,9 +26,15 @@ strong{
 	font-family: 'Poppins', sans-serif;
 }
 
-h2, h3{
-	color: #4DC58D;
-	font-size:calc(17px + 0.5vw);
-	font-family: 'Poppins', sans-serif;
+h2{
+
+	font-size:calc(30px + 0.5vw);
+	font-weight: 100;
+
+} 
+h3{
+
+	font-size:calc(20px + 0.5vw);
+	font-weight: 400;
 }
 
