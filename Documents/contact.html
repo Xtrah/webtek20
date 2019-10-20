@@ -8,34 +8,41 @@
     <title>Contact Us</title>
 </head>
 <body>
-    <h2>Contact Us</h2>
+    <div id="contactus">
+        <h2>Contact Us</h2>
 
-    <form action="answer.html">
-        <label for="name">
-            Name <br>
-            <input type="text" id="name" name="name" pattern="[A-Za-z\s]{1,}" required>
-        </label>
-        <br>
-        <label for="email">
-            Email <br>
-            <input type="text" id="email" name="email" required>
-        </label>
-        <br>
-        <label for="telephone">
-            Telephone <br>
-            <input type="tel" id="telephone" name="telephone" pattern="[0-9]{8}" required>
-        </label>
-        <br>
-        <label for="message">
-            Message <br>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        </label>
-        <br>
-        <label for="submit">
-            <input type="submit" id="submit" value="Send">
-        </label>
-    </form>
+        <div id="contactUsPylon">
+            <form action="answer.html">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" id="name" name="name" pattern="[A-Za-z\s]{1,}" required>
+                    <br>
 
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="text" id="email" name="email" required>
+                    <br>
+
+                    <label for="telephone">Telephone</label>
+                    <br>
+                    <input type="tel" id="telephone" name="telephone" pattern="[0-9]{8}" required>
+                    <br>
+
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <br>
+
+                    <label for="submit">
+                        <input type="submit" id="submit" value="Send">
+                    </label>
+                </form>
+        </div>
+
+            
+
+    </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
