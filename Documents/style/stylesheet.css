@@ -329,3 +329,34 @@ ul ul{
 .ulBastard{
 	list-style: none;
 }
+
+
+
+/* For contact.html */
+
+div#contactus form{
+	color: black;
+	font-family: 'Poppins', sans-serif;
+}
+
+div#contactus form input{
+	margin: 5px 0;
+	padding: 5px 0;
+}
+
+div#contactus form input, div#contactus form textarea{
+	width: 250px;
+	resize: none;
+}
+
+div#contactus input[type~="submit"]{
+	padding: 10px 20px;
+	width: 50%;
+	background-color: #5B9BD5;
+}
+
+div#contactus div#contactUsPylon{
+	background-color: white;
+	width: fit-content;
+	padding: 20px;
+}
