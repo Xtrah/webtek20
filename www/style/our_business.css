@@ -1,0 +1,23 @@
+.center {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.center > p {
+    margin-top: 5%; 
+    width: 80%;
+    font-size: 1.35em;
+    line-height: 40px;
+}
+
+.center > p > strong {
+    font-size: 1.125em;
+    color: #4DC58D;
+}
+
+#our_business_img {
+    position: absolute;
+    top: 10%;
+    left: 75vw;
+}
