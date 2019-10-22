@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+
+#ourCustomersTitle{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin: auto;
+}
+
+#allTestemonialsWrapper{
+    height: 95vh;
+    width: 95vw;;
+    border: solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 4fr;
+}
+
+.testemonials{
+    border: solid red;
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    position: relative;
+    padding: 0.5em;
+}
+
+.testemonialsImgWrapper{
+    border: solid blue;
+    border-radius: 100px;
+    margin: auto;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    top: -50px;
+}
+
+.testemonialName{
+    color: green;
+}
+.testemonialText{
+    color: brown;
+}
+.testemonialHas{
+    color: purple;
+
+}
+.testemonialsButtons{
+    width: 80%;
+    margin: auto;
+}
+
