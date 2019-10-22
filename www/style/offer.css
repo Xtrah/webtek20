@@ -1,0 +1,35 @@
+#modulHolder {
+	margin: 70px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.modul { 
+	
+	width: 50%;
+	margin: 1%;
+	border-radius: 20px;
+	text-align: center;
+}
+.modul > img{
+	width: 60%;
+}
+
+
+.modul ul li:before {
+    content: url("../img/whatWeOffer/checkBoxIcon.png");
+    position: absolute;
+    left: -0.8em;         
+    font-size: 5%; 
+}
+
+.modul ul li {
+    border-bottom-style: none;
+    border-color: #ccc;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5em 0.5em 0.5em 3.4em;
+    position: relative;
+    text-align: left;
+}
+
