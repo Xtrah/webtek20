@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100vw;
+}
 .container{
     max-width: 75%;
     margin: auto;
@@ -27,4 +30,27 @@
 .fade-in {
     opacity: 0;
     animation: fadeIn 0.3s ease-in 1 forwards;
+}
+
+/*Styling for mobile resolution*/
+
+.carousel-container{
+    display: none;
+    overflow: hidden;
+}
+.carousel-slide{
+    display: flex;
+    width: 100%;
+}
+.carousel-container img{
+    width: 100vw;
+    margin: auto
+}
+@media only screen and (max-width: 768px){
+    .container{
+        display: none;
+    }
+    .carousel-container{
+        display: block;
+    }   
 }
