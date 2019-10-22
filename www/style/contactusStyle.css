@@ -1,0 +1,61 @@
+/* For contact.html */
+
+div#contactus{
+	width: 100%;
+	height: 100vh;
+
+	background-image: url("../img/FormBackground.png");
+	background-position: center;
+	background-repeat: none;
+	background-size: cover;
+
+	align-content: center;
+}
+
+div#contactus h2{
+	margin-top: 0;
+	padding: 0 0 0 0;
+	font-size: 60px;
+	font-weight: bolder;
+	text-shadow: black 2px 2px 2px;
+
+}
+
+div#contactus form{
+	font-family: 'Poppins', sans-serif;
+	position: absolute;
+	left: 60px;
+	top: 50px;
+}
+
+div#contactus form input{
+	margin: 5px 0;
+	padding: 5px 0;
+}
+
+div#contactus form input, div#contactus form textarea{
+	width: 250px;
+	resize: none;
+	background-color: rgb(230, 230, 230);
+	border: none;
+}
+
+div#contactus input[type~="submit"]{
+	padding: 10px 20px;
+	width: 50%;
+	background-color: #5B9BD5;
+}
+
+div#contactus div#contactUsPylon{
+	background-image: url(../img/FormPylon.png);
+	background-size: cover;
+	position: relative;
+	
+	width: 380px;
+	height: calc(100vh - 68.67px);
+	padding: 20px;
+	display: block;
+	margin: auto;
+	overflow: hidden;
+
+}
