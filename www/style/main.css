@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: black;
+}
+
+/* TEKST */
+p,h1,h2,h3,li,b,strong {
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300i;
+	font-size:calc(10px + 0.5vw);
+}
+
+/* Generell tekst. For eksempel som innhold på testimonials */
+p {
+	font-size:calc(9px + 0.5vw); 
+}
+
+
+/* Uthevet tekst i samspill med p-elementer. Brukes for å utheve tekst */
+strong{
+	font-size:calc(10px + 0.5vw);
+	color: #5B9BD5;
+}
+
+/* Section-titles */
+h1{
+	color: #5B9BD5;
+	font-size:calc(20px + 3vw);
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+/* Sub-påstander */
+h2{
+	text-align: center;
+	font-size:calc(15px + 1vw);
+	font-weight: 100;
+} 
+
+/* Underovertitler e.g. navn på what we offer */
+h3{
+
+	font-size:calc(15px + 0.7vw);
+	font-weight: 400;
+}
+
+/* Liste element i our customers samt under what we offer.*/ 
+li {
+	font-size:calc(9px + 0.5vw);
+}
