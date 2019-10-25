@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background-color: black;
+    font-family: 'Poppins', sans-serif;
 }
 
 #ourCustomersTitle{
@@ -24,7 +25,7 @@ body{
     height: 70%;
     margin: auto;
     position: relative;
-    padding: 0.5em;
+    padding: 1em;
     min-width: 170px;
     background-color: white;
 }
@@ -55,12 +56,18 @@ body{
 
 }
 .testemonialsButtons{
-    width: 90%;
+    width: 85%;
     margin: auto;
+    height: 3em;
     display: block;
-    bottom: 2%;
+    bottom: 1em;
     position: absolute;
     left: 0;
     right: 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #5B9BD5;
+    color: white;
+    font-weight: bolder;
 }
 
