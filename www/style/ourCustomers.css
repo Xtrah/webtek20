@@ -1,7 +1,7 @@
 body{
     margin: 0;
-    background-color: black;
     font-family: 'Poppins', sans-serif;
+    background-color: white;
 }
 
 #ourCustomersTitle{
@@ -12,6 +12,7 @@ body{
 }
 
 #allTestemonialsWrapper{
+    background-color: black;
     height: 95vh;
     width: 95vw;;
     border: solid black;
@@ -42,6 +43,7 @@ body{
     right: 0;
     background-color: white;
     box-shadow: 0px 0px 5px 1px;
+    overflow: hidden;
 }
 
 .testemonialName{
