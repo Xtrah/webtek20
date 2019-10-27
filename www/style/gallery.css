@@ -5,6 +5,7 @@
 }
 body{
     width: 100vw;
+    font-family: 'Poppins', sans-serif;
 }
 .container{
     max-width: 75%;
@@ -38,6 +39,9 @@ body{
     display: none;
     overflow: hidden;
 }
+.btns{
+    display: none;
+}
 .carousel-slide{
     display: flex;
     width: 100%;
@@ -52,5 +56,32 @@ body{
     }
     .carousel-container{
         display: block;
+    }
+    .btns{
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        width: 100vw;
+        height: 50px;
+        margin: auto;
+        text-align: center;
+    }
+    #prevBtn{
+        width: 100%;
+        border-radius: 5%;
+        background-color: black;
+        color: #4dc58d;
+        font-family: 'Poppins', sans-serif;
+        font-size: calc(30px + 0.5vw);
+        letter-spacing: 2px;
+    }   
+    #nextBtn{
+        width: 100%;
+        border-radius: 5%;
+        background-color: black;
+        color: #4dc58d;
+        font-family: 'Poppins', sans-serif;
+        font-size: calc(30px + 0.5vw);
+        letter-spacing: 5px;
     }   
 }
