@@ -1,16 +1,7 @@
-body{
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: black;
-}
-
 #ourCustomersTitle{
     margin: auto;
     grid-column: 1/-1;
 }
-
-
-
 
 .testemonialsImgWrapper{
     border-radius: 100px;
