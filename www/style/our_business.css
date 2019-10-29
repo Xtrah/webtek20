@@ -1,0 +1,42 @@
+.ourBusiness {
+    margin: auto;
+    text-align: justify;
+}
+
+.ourBusiness > #m > p {
+    font-size: 1.35em;
+    line-height: 40px;
+    margin: 1.35em 0em 0em 1.5em;
+}
+
+.ourBusiness > #m > p > strong {
+    font-size: 1.125em;
+    color: #4DC58D;
+}
+
+.ourBusiness > h1 {
+    margin-top: 0.25em;
+}
+
+.ourBusiness > #m > img {
+    position: relative;
+    margin-left: 5vw;
+}
+
+#m {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    img {
+        display: none;
+    }
+    .ourBusiness > #m {
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
