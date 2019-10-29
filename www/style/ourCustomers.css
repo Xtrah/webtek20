@@ -1,3 +1,7 @@
+h3{
+    color: black;
+}
+
 #ourCustomersTitle{
     margin: auto;
     grid-column: 1/-1;
@@ -70,7 +74,7 @@
     outline: none;
 }
 
-#allTestemonialsWrapper{
+#ourCustomers{
         background-color: black;
         width: 100vw;
         padding: 3vw;
@@ -93,7 +97,7 @@
 
 
 @media only screen and (max-width: 920px){
-    #allTestemonialsWrapper{
+    #ourCustomers{
         background-color: black;
         width: 100vw;
         padding: 3vw 15% 15% 15%;
@@ -116,7 +120,7 @@
 }
 
 @media only screen and (max-width: 590px){
-    #allTestemonialsWrapper{
+    #ourCustomers{
         background-color: black;
         width: 100vw;
         padding: 3vw;
