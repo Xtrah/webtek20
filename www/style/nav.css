@@ -9,7 +9,7 @@ nav{
 	align-items: center;
 	min-height: 8vh;
 	margin: auto;
-	background-color: white;
+	background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
 	position: sticky;
     top: 0;
     z-index: 10;
@@ -62,14 +62,14 @@ a:active{
 	}
 	nav{
         justify-content: flex-end;
-        background-color: black;
+		background-image: linear-gradient(to left, #a8caba 0%, #5d4157 100%);
 	}
 	.nav-links{
 		position: absolute;
 		right: 0px;
 		height: 92vh;
 		top: 8vh;
-		background-color: black;
+		background-image: linear-gradient(to bottom, #a8caba 0%, #5d4157 100%);
 		display: none;
 		flex-direction: column;
         align-items: center;
@@ -89,7 +89,7 @@ a:active{
 .nav-active{
 	transform: translateX(0);
     display: flex;
-	background-color: white;
+	background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 	color: black;
 }
 @keyframes navLinkFade{
