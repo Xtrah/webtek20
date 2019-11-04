@@ -1,6 +1,6 @@
 #background{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-image: url("../img/FormBackground.png");
 	background-position: center;
 	background-repeat: none;
@@ -15,7 +15,7 @@ div#contactus{
 
 
 #contactus h2{
-	font-size: 60px;
+	font-size: calc(60px + 0.5vw);
 	font-weight: bolder;
     text-shadow: black 2px 2px 2px;
     margin: 10px;
@@ -27,7 +27,7 @@ div#contactus{
 div#contactUsPylon{
     background-image: url("../img/FormPylon.png");
     background-repeat: no-repeat;
-    background-size: 100% 160%;
+    background-size: 100% 140vh;
     background-position: 0 70px;
     grid-column: 1/2;
     grid-row: 2/3;
