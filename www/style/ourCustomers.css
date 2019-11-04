@@ -1,13 +1,13 @@
-.testimonials > h3{
+.testimonials>.textWrapper>h3 {
     color: black;
 }
 
-#ourCustomersTitle{
+#ourCustomersTitle {
     margin: auto;
     grid-column: 1/-1;
 }
 
-.testimonialsImgWrapper{
+.testimonialsImgWrapper {
     border-radius: 100px;
     margin: auto;
     position: absolute;
@@ -22,35 +22,38 @@
     transition: 100ms;
 }
 
-.testimonialsImgWrapper:hover{
+.testimonialsImgWrapper:hover {
     transition: 100ms;
     height: 102px;
     width: 102px;
     box-shadow: 0px 0px 10px 1px;
 }
 
-.testimonialName{
+.testimonialName {
     margin-top: 45px;
     font-weight: bold;
 }
-.testimonialText{
+
+.testimonialText {
     color: black;
 }
-.testimonialHas{
+
+.testimonialHas {
     padding: 0 0 0 1em;
 }
-.testimonialHas li{
+
+.testimonialHas li {
     color: black;
 }
-.testimonialsButtons{
+
+.textWrapper{
+    flex-grow: 1;
+}
+
+.testimonialsButtons {
     width: 85%;
-    margin: auto;
+    margin: 0.5em auto;
     height: 3.5em;
-    display: block;
-    bottom: 1em;
-    position: absolute;
-    left: 0;
-    right: 0;
     border-radius: 5px;
     border: none;
     background-color: #5B9BD5;
@@ -59,44 +62,49 @@
     transition: 100ms;
 }
 
-.testimonialsButtons:hover{
+.testimonialsButtons:hover {
     background-color: rgb(81, 145, 203);
     width: 80%;
     transition: 100ms;
 }
-.testimonialsButtons:active{
+
+.testimonialsButtons:active {
     background-color: rgb(81, 145, 203);
     outline: none;
-    
+
 }
-.testimonialsButtons:focus{
+
+.testimonialsButtons:focus {
     background-color: rgb(81, 145, 203);
     outline: none;
 }
 
-#ourCustomers{
-        background-color: black;
-        width: 100vw;
-        display: grid;
-        gap: 5px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    
-    .testimonials{
-        width: 200px;
-        height: 350px;
-        margin: 50px auto auto auto;
-        position: relative;
-        padding: 1em;
-        min-width: 170px;
-        background-color: white;
-        border-radius: 1px;
-    }
+#ourCustomers {
+    background-color: black;
+    width: 100vw;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    height: 350px;
+    margin: 50px auto auto auto;
+    position: relative;
+    padding: 1em;
+    min-width: 170px;
+    background-color: white;
+    border-radius: 1px;
+}
 
 
 
-@media only screen and (max-width: 920px){
-    #ourCustomers{
+@media only screen and (max-width: 920px) {
+    #ourCustomers {
         background-color: black;
         width: 100vw;
         padding: 3vw 15% 15% 15%;
@@ -104,8 +112,8 @@
         gap: 5px;
         grid-template-columns: 1fr 1fr;
     }
-    
-    .testimonials{
+
+    .testimonials {
         width: 200px;
         height: 315px;
         margin: 70px auto auto auto;
@@ -118,8 +126,8 @@
 
 }
 
-@media only screen and (max-width: 590px){
-    #ourCustomers{
+@media only screen and (max-width: 590px) {
+    #ourCustomers {
         background-color: black;
         width: 100vw;
         padding: 3vw;
@@ -127,8 +135,8 @@
         gap: 5px;
         grid-template-columns: 1fr;
     }
-    
-    .testimonials{
+
+    .testimonials {
         width: 200px;
         height: 300px;
         margin: 70px auto auto auto;
