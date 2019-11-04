@@ -58,13 +58,13 @@ li {
 
 /* OUR BUSINESS STYLE:
 Text align justify for content of this section. */
-.ourBusiness {
+#ourBusiness {
     text-align: justify;
 }
 
 /* main-ourBusiness has 1fr for img, and 5fr for the p-element.
 The width is 60vw to get a clean transition from the img gallery. */
-#main-ourBusiness {
+.main_ourBusiness {
     display: grid;
     grid-template-columns: 5fr 1fr;
     width: 60vw;
@@ -72,23 +72,23 @@ The width is 60vw to get a clean transition from the img gallery. */
 }
 
 /* Strong style. */
-.ourBusiness > #main-ourBusiness > p > strong {
+#ourBusiness > .main_ourBusiness > p > strong {
     font-size: 1.05em;
     color: #4DC58D;
 }
 
 /* The img position. */
-.ourBusiness > #main-ourBusiness > img {
+#ourBusiness > .main_ourBusiness > img {
     position: relative;
     margin-left: 10%;
 }
 
 /* Responsive for mobile. */
 @media only screen and (max-width: 768px) {
-    .ourBusiness > #main-ourBusiness > img {
+    #ourBusiness > .main_ourBusiness > img {
         display: none;
     }
-    .ourBusiness > #main-ourBusiness {
+    #ourBusiness > .main_ourBusiness {
         width: 90vw;
         display: flex;
         align-items: center;
