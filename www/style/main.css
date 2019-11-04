@@ -8,7 +8,7 @@ body{
 	background-color: black;
 }
 
-/* TEKST */
+/* TEXT */
 p,h1,h2,h3,li,b,strong {
 	color: white;
 	font-family: 'Poppins', sans-serif;
@@ -16,13 +16,13 @@ p,h1,h2,h3,li,b,strong {
 	font-size:calc(10px + 0.5vw);
 }
 
-/* Generell tekst. For eksempel som innhold på testimonials */
+/* General text. Content on testimonials */
 p {
 	font-size:calc(9px + 0.5vw); 
 }
 
 
-/* Uthevet tekst i samspill med p-elementer. Brukes for å utheve tekst */
+/* Strong text together with the p-element. */
 strong{
 	font-size:calc(10px + 0.5vw);
 	color: #5B9BD5;
@@ -37,21 +37,61 @@ h1{
 	margin-bottom: 0;
 }
 
-/* Sub-påstander */
+/* Sub-proposale */
 h2{
 	text-align: center;
 	font-size:calc(15px + 1vw);
 	font-weight: 100;
 } 
 
-/* Underovertitler e.g. navn på what we offer */
+/* Subtitles and the title what we offer. */
 h3{
 
 	font-size:calc(15px + 0.7vw);
 	font-weight: 400;
 }
 
-/* Liste element i our customers samt under what we offer.*/ 
+/* List element in our customers and under what we offer. */ 
 li {
 	font-size:calc(9px + 0.5vw);
+}
+
+/* OUR BUSINESS STYLE:
+Text align justify for content of this section. */
+.ourBusiness {
+    text-align: justify;
+}
+
+/* main-ourBusiness has 1fr for img, and 5fr for the p-element.
+The width is 60vw to get a clean transition from the img gallery. */
+#main-ourBusiness {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    width: 60vw;
+    margin: auto;
+}
+
+/* Strong style. */
+.ourBusiness > #main-ourBusiness > p > strong {
+    font-size: 1.05em;
+    color: #4DC58D;
+}
+
+/* The img position. */
+.ourBusiness > #main-ourBusiness > img {
+    position: relative;
+    margin-left: 10%;
+}
+
+/* Responsive for mobile. */
+@media only screen and (max-width: 768px) {
+    .ourBusiness > #main-ourBusiness > img {
+        display: none;
+    }
+    .ourBusiness > #main-ourBusiness {
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
