@@ -7,11 +7,11 @@ nav{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	min-height: 8vh;
+	height: 8vh;
 	margin: auto;
-	background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+	background-color: black;
 	position: sticky;
-    top: 0;
+	top: 0;
     z-index: 10;
 }
 .nav-links{
@@ -22,7 +22,7 @@ nav{
 	list-style: none;
 }
 .nav-links a{
-	color: black;
+	color: white;
 	text-decoration: none;
 	letter-spacing: 2.2px;
 	font-size: 18px;
@@ -38,12 +38,6 @@ nav{
 	margin: 5px;
 	transition: all 0.3s ease-in;
 }
-a:hover{
-	color: #4DC58D;
-}
-a:active{
-	color: #5B9BD5;
-}
 
 /* burger animation upon click */
 .toggle .line1{
@@ -55,21 +49,24 @@ a:active{
 .toggle .line3{
 	transform: rotate(45deg) translate(-5px, -6px);
 }
-
+@media screen and (min-width:768px){
+	a:hover{
+		color: #4DC58D;
+	}
+}
 @media screen and (max-width:768px){
 	body{
 		overflow-x: hidden;
 	}
 	nav{
         justify-content: flex-end;
-		background-image: linear-gradient(to left, #a8caba 0%, #5d4157 100%);
 	}
 	.nav-links{
 		position: absolute;
 		right: 0px;
 		height: 92vh;
 		top: 8vh;
-		background-image: linear-gradient(to bottom, #a8caba 0%, #5d4157 100%);
+		background-color: black;
 		display: none;
 		flex-direction: column;
         align-items: center;
@@ -88,9 +85,10 @@ a:active{
 }
 .nav-active{
 	transform: translateX(0);
-    display: flex;
-	background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
-	color: black;
+	display: flex;
+	position: fixed;
+	background-color: black;
+	color: white;
 }
 @keyframes navLinkFade{
 	from{
