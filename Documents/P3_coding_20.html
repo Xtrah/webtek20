@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P3 Project Design</title>
+    <link rel="stylesheet" href="style/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#ourClient">Our Client</a></li>
+            <li><a href="#changes">Changes</a></li>
+            <li><a href="#organizationalScheme">Organizational scheme</a></li>
+            <li><a href="#workDivision">Work division</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <img src="img/LeftOverlay.png" alt="Left Overlay" id="overlayL">
+    <img src="img/RightOverlay.png" alt="Right Overlay" id="overlayR">
+
+    <div class="wrapper">
+
+        <header>
+            <div id="timetag">
+                <p>04.11.2019</p>
+            </div>
+            <h1>P3 Project Coding</h1>
+            <h2>Livia Valenti, Vemund Hassel, Andreas Haugli, Mats Finsås, David Lekve og Henrik Viken Lied</h2>
+        </header>
+
+        <main>
+
+            <section id="ourClient">
+                <h2><img src="img/client.png" alt="client icon" id="client-icon">Our Client</h2>
+                <div class="hrReplacement"></div>
+                <ul class="clientList">
+                    <li><strong>Client Name:</strong> Hassel Software AS</li>
+                    <li><strong>Contact person:</strong> Vigbjørn Hassel Vaage</li>
+                    <li><strong>Position in company:</strong> CEO</li>
+                </ul>
+
+                <p>
+                    Hassel Software is a Norwegian tech startup created by a company with more than a hundred years of
+                    experience selling and distributing cars. Since 2015 they have developed software to digitize
+                    traditional dealerships and dealership networks.
+                </p>
+                <p>
+                    Link to our website: <a href="../www/index.html">click here</a><br>
+                    Link to our GitHub Repository: <a href="https://github.com/Xtrah/webtek20">click here</a>
+                </p>
+
+            </section>
+
+
+            <section id="changes">
+                <h2><img src="img/purpgoals.png" alt="plan icon" id="purpgoals-icon">Changes</h2>
+                <div class="hrReplacement"></div>
+                <p>There are some changes to our original plan after starting development. The overall design of the
+                    page will stay as planned in <a href="P2_design_20.html">P2 Project Design</a> but the
+                    organizational scheme and list of files and folders has some changes which we will explain in detail below.</p>
+            </section>
+
+            <section id="organizationalScheme">
+                <h2>Updated organizational scheme</h2>
+                <div class="hrReplacement"></div>
+                <p>Here is our updated organizational scheme. Our original plan to fulfill the requirement for
+                    modularity was to import sections using JavaScript. To our surprise however, without using the
+                    JavaScript library jQuery, the only method to do this are frames which are obsolete in HTML5, and
+                    iframes which are not optimal for our intent. This results in our change which consists of all
+                    previous seperate <code>.html</code> files that we planned to import using scripts will be hard
+                    coded directly into <code>index.html</code> using seperate branches in git, and merged together in
+                    the end.</p>
+
+                <ul>
+                    <li>index.html - sections:</li>
+                    <li class="ulBastard">
+                        <ul>
+                            <li>Frontpage</li>
+                            <li>What we offer</li>
+                            <li>Gallery</li>
+                            <li>Our business</li>
+                            <li>Our customers</li>
+                            <li>Contact</li>
+                            <li>Footer (injected using JS)</li>
+                        </ul>
+                    </li>
+
+                    <li>img/</li>
+                    <li class="ulBastard">
+                        <ul>
+                            <li>galleryimg1</li>
+                            <li>galleryimg2</li>
+                            <li>galleryimg3</li>
+                            <li>...</li>
+                        </ul>
+                    </li>
+
+                    <li>video/</li>
+                    <li class="ulBastard">
+                        <ul>
+                            <li>frontpagevideo.mp4</li>
+                        </ul>
+                    </li>
+                    <li>script/</li>
+                    <li class="ulBastard">
+                        <ul>
+                            <li>app.js</li>
+                        </ul>
+                    </li>
+
+                    <li>style/</li>
+                    <li class="ulBastard">
+                        <ul>
+                            <li>stylesheet.css</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="workDivision">
+                <h2>Updated work division table</h2>
+                <div class="hrReplacement"></div>
+                <p>Work load on each group member is mostly unchanged, but instead of working in seperate HTML documents
+                    like originally planned, we have divided it into sections in <code>index.html</code>. That means our
+                    work division table has a few changes to represent this. Additionally the deadline for the site to
+                    be ready for testing was extended by 1 day to handle unexpected merge conflicts.</p>
+
+                <table>
+                    <tr id="first">
+                        <th>File/section</th>
+                        <th>Description</th>
+                        <th>In charge</th>
+                        <th>Deadline</th>
+                    </tr>
+
+                    <tr>
+                        <th>index.html</th>
+                        <th>index.html will contain all sections and content on our site, and will link to external
+                            stylesheets and scripts. Also responsible for merging using git.</th>
+                        <th>Mats</th>
+                        <th>03.11.2019</th>
+                    </tr>
+
+                    <tr>
+                        <th>Frontpage</th>
+                        <th>The front page of the site. Introduces the customer to the products and services.</th>
+                        <th>Livia and David</th>
+                        <th>03.11.2019</th>
+                    </tr>
+
+                    <tr>
+                        <th>What we offer</th>
+                        <th>This section of the page will present the modularity and scalability of the products our
+                            customer is selling.</th>
+                        <th>Henrik and Mats</th>
+                        <th>03.11.2019</th>
+                    </tr>
+
+                    <tr>
+                        <th>Gallery</th>
+                        <th>Images of the product in use.</th>
+                        <th>Henrik and Vemund</th>
+                        <th>03.11.2019</th>
+                    </tr>
+
+                    <tr>
+                        <th>Our business</th>
+                        <th>An introduction to the company.</th>
+                        <th>Vemund and Andreas</th>
+                        <th>03.11.2019</th>
+                    </tr>
+
+                    <tr>
+                        <th>Our customers</th>
+                        <th>Testimonials from some of the customers using the products.</th>
+                        <th>David and Livia</th>
+                        <th>03.11.2019</th>
+                    </tr>
+
+                    <tr>
+                        <th>Contact us</th>
+                        <th>A section where the user can contact the business through a form. This allows the site to
+                            convert interested visitors into meetings, creating potential customers.</th>
+                        <th>Vemund and Mats</th>
+                        <th>03.11.2019</th>
+                    </tr>
+
+                    <tr>
+                        <th>app.js</th>
+                        <th>A JavaScript file including code for a navBurger and other features.</th>
+                        <th>All</th>
+                        <th>03.11.2019</th>
+                    </tr>
+
+                    <tr>
+                        <th>style.css</th>
+                        <th>Styling for the page</th>
+                        <th>All</th>
+                        <th>03.11.2019</th>
+                    </tr>
+
+                    <tr>
+                        <th>Final controls</th>
+                        <th>Checking for errors or improvements</th>
+                        <th>All</th>
+                        <th>04.11.2019</th>
+                    </tr>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
