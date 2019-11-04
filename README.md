@@ -19,5 +19,5 @@
 [Documents/P2_design_20.html](Documents/P2_design_20.html)
 - P3 Coding  
 [Documents/P3_coding_20.html](Documents/P3_coding_20.html)
-<!-- - P4 Testing  
-[Documents/P4_testing_20.html](Documents/P4_testing_20.html) -->
+- P4 Testing  
+[Documents/P4_testing_20.html](Documents/P4_testing_20.html)
