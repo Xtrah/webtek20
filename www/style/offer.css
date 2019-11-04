@@ -40,6 +40,9 @@
 	.modulContent{
 		width: 60%;
 	}
+	#whatWeOffer{
+		padding-bottom: 100px;
+	}
 }
 
 @media only screen and (max-width: 600px){
@@ -53,5 +56,6 @@
 	.modulContent{
 		width: 60%;
 	}
+	
 }
 
