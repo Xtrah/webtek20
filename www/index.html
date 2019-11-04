@@ -14,11 +14,32 @@
     <link rel="stylesheet" href="style/ourCustomers.css">
     <link rel="stylesheet" href="style/gallery.css">
     <link rel="stylesheet" href="style/our_business.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="style/contactusStyle.css">
+=======
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">
+>>>>>>> 8f20e6b52531408b26c777c5fdc258838417a647
     <title>Hassel Software</title>
 </head>
 
 <body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#frontpage">Front Page</a></li>
+            <li><a href="#whatWeOffer">What We offer</a></li>
+            <li><a href="#ourCustomers">Our Customers</a></li>
+            <li><a href="#gallery">Image Gallery</a></li>
+            <li><a href="#ourBusiness">Our Business</a></li>
+            <li><a href="#contactUs">Contact Us</a></li>
+        </ul>
+        <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+    </nav>
+
     <section id="frontpage">
 
     </section>
@@ -138,27 +159,6 @@
     </section>
 
     <section id="gallery">
-        <div class="galleryContainer">
-            <div class="main-img">
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <img src="img/gallery/img1.jpg" alt="Current IMG" id="current">
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                <div class="imgs">
-                    <img src="img/gallery/img1.jpg" alt="thumbnail img">
-                    <img src="img/gallery/img2.jpg" alt="thumbnail img">
-                    <img src="img/gallery/img3.jpg" alt="thumbnail img">
-                    <img src="img/gallery/img4.jpg" alt="thumbnail img">
-                    <img src="img/gallery/img5.jpg" alt="thumbnail img">
-                    <img src="img/gallery/img6.jpg" alt="thumbnail img">
-                    <img src="img/gallery/img7.jpg" alt="thumbnail img">
-                    <img src="img/gallery/img8.jpg" alt="thumbnail img">
-                    <img src="img/gallery/img9.jpg" alt="thumbnail img">
-                    <img src="img/gallery/img10.jpg" alt="thumbnail img">
-                    <img src="img/gallery/img11.jpg" alt="thumbnail img">
-                    <img src="img/gallery/img12.jpg" alt="thumbnail img">
-                </div>
-            </div>
-        </div>
         <div class="carousel-container">
             <div class="carousel-slide">
                 <img src="img/gallery/img12.jpg" id="lastClone" alt="thumbnail img">
@@ -176,12 +176,10 @@
                 <img src="img/gallery/img12.jpg" alt="thumbnail img">
                 <img src="img/gallery/img1.jpg" id="firstClone" alt="thumbnail img">
             </div>
+            <a id="prevBtn" class="btns">&#10094;</a>
+            <a id="nextBtn" class="btns">&#10095;</a>
         </div>
-        <div class="btns">
-            <!--Buttons for the responsive slideshow -->
-            <button id="prevBtn">Previous</button>
-            <button id="nextBtn">Next</button>
-        </div>
+        
 
     </section>
 
@@ -249,6 +247,8 @@
     <footer></footer>
     <!-- Scripts -->
     <script src="script/gallery.js"></script>
+    <script src="script/navBurger.js"></script>
+    <script src="script/footer.js"></script>
 </body>
 
 </html>

@@ -77,7 +77,6 @@
 #ourCustomers{
         background-color: black;
         width: 100vw;
-        padding: 3vw;
         display: grid;
         gap: 5px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
