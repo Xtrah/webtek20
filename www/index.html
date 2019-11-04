@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style/ourCustomers.css">
     <link rel="stylesheet" href="style/gallery.css">
     <link rel="stylesheet" href="style/our_business.css">
+    <link rel="stylesheet" href="style/contactusStyle.css">
     <title>Hassel Software</title>
 </head>
 
@@ -201,9 +202,49 @@
 
     </section>
 
-    <section id="contactUs">
+    <section id="contact">
+        <div id="contactus">
+            <h2>Contact Us</h2>
+            <div id="contactUsPylon">
+                <form action="answer.html">
+                    <div>
+                        <label for="name">Name</label>
+                        <br>
+                        <input type="text" id="name" name="name" pattern="[A-Za-z\s]{1,}" required>
+                        <br>
 
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="text" id="email" name="email" required>
+                        <br>
+                    </div>
+
+                    <div>
+                        <label for="telephone">Telephone</label>
+                        <br>
+                        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{8}" required>
+                        <br>
+
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <br>
+                        <textarea name="message" id="message" cols="30" rows="7"></textarea>
+                        <br>
+                    </div>
+                    <div class="submit">
+                        <label for="submit">
+                            <input type="submit" id="submit" value="Send">
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
+
 
     <footer></footer>
     <!-- Scripts -->
