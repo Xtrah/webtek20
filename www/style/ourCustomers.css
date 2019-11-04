@@ -1,4 +1,4 @@
-.testemonials > h3{
+.testimonials > h3{
     color: black;
 }
 
@@ -7,7 +7,7 @@
     grid-column: 1/-1;
 }
 
-.testemonialsImgWrapper{
+.testimonialsImgWrapper{
     border-radius: 100px;
     margin: auto;
     position: absolute;
@@ -22,27 +22,27 @@
     transition: 100ms;
 }
 
-.testemonialsImgWrapper:hover{
+.testimonialsImgWrapper:hover{
     transition: 100ms;
     height: 102px;
     width: 102px;
     box-shadow: 0px 0px 10px 1px;
 }
 
-.testemonialName{
+.testimonialName{
     margin-top: 45px;
     font-weight: bold;
 }
-.testemonialText{
+.testimonialText{
     color: black;
 }
-.testemonialHas{
+.testimonialHas{
     padding: 0 0 0 1em;
 }
-.testemonialHas li{
+.testimonialHas li{
     color: black;
 }
-.testemonialsButtons{
+.testimonialsButtons{
     width: 85%;
     margin: auto;
     height: 3.5em;
@@ -59,17 +59,17 @@
     transition: 100ms;
 }
 
-.testemonialsButtons:hover{
+.testimonialsButtons:hover{
     background-color: rgb(81, 145, 203);
     width: 80%;
     transition: 100ms;
 }
-.testemonialsButtons:active{
+.testimonialsButtons:active{
     background-color: rgb(81, 145, 203);
     outline: none;
     
 }
-.testemonialsButtons:focus{
+.testimonialsButtons:focus{
     background-color: rgb(81, 145, 203);
     outline: none;
 }
@@ -83,7 +83,7 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     
-    .testemonials{
+    .testimonials{
         width: 200px;
         height: 350px;
         margin: 50px auto auto auto;
@@ -106,9 +106,9 @@
         grid-template-columns: 1fr 1fr;
     }
     
-    .testemonials{
+    .testimonials{
         width: 200px;
-        height: 300px;
+        height: 315px;
         margin: 70px auto auto auto;
         position: relative;
         padding: 1em;
@@ -129,7 +129,7 @@
         grid-template-columns: 1fr;
     }
     
-    .testemonials{
+    .testimonials{
         width: 200px;
         height: 300px;
         margin: 70px auto auto auto;
