@@ -86,14 +86,15 @@
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 5px;
 }
 
 .testimonials {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 200px;
-    height: 350px;
+    width: calc(200px + 2vw);
+    height: calc(330px + 5vw);
     margin: 50px auto auto auto;
     position: relative;
     padding: 1em;
@@ -118,7 +119,7 @@
 
     .testimonials {
         width: 200px;
-        height: 315px;
+        height: calc(315px + 5vh);
         margin: 70px auto auto auto;
         position: relative;
         padding: 1em;
@@ -140,8 +141,8 @@
     }
 
     .testimonials {
-        width: 200px;
-        height: 300px;
+        width: calc(200px + 2vw);
+        height: calc(300px + 5vh);
         margin: 70px auto auto auto;
         position: relative;
         padding: 1em;
