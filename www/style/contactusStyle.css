@@ -1,13 +1,11 @@
-#contact{
-    height: 100vh;
-    width: 100vw;
+
+
+div#contactus{
     background-image: url("../img/FormBackground.png");
 	background-position: center;
 	background-repeat: none;
     background-size: cover;
-}
-
-div#contactus{
+    
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 12vh 88vh;
