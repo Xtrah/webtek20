@@ -136,7 +136,18 @@
     color: white;
     font-weight: bolder;
     transition: 100ms;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    /* MIDLERTIDIG XXXXXXXXXXXXXXXXXXXX */
+    font-family: 'Poppins', sans-serif;
+    /* MIDLERTIDIG XXXXXXXXXXXXXXXXXXXX */
+    font-size: 0.8em;
 }
+
+
+
 
 /* ---------------------------- */
 /* ---------- IMAGES ---------- */
