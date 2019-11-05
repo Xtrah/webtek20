@@ -48,13 +48,13 @@ div#contactUsPylon form{
 div#contactUsPylon div{
     height: 15%;
     width: 100%;
-    margin-top: 1%;
+    /* margin-top: 1%; */
     font-size: 1em;
 
 }
 
 div#contactUsPylon form input, div#contactUsPylon form textarea{
-    margin: 1vh 0;
+    /* margin: 1vh 0; */
     width: 100%;
     padding: 1vh;
 	resize: none;
@@ -63,7 +63,7 @@ div#contactUsPylon form input, div#contactUsPylon form textarea{
 }
 
 div#contactUsPylon form textarea{
-    height: 100%;
+    height: 80%;
 }
 
 div#contactUsPylon div.submit{
@@ -86,4 +86,10 @@ div#contactUsPylon input[type~="submit"]{
 
     color: white;
     font-size: 1.5em;
+}
+
+@media screen and (min-width: 600px){
+    div#contactus{
+        grid-template-columns: 1fr 60vh 1fr;
+    }
 }
