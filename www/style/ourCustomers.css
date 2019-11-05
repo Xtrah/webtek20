@@ -82,7 +82,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: calc(200px + 2vh);
+    width: calc(210px + 4vh);
     height: calc(330px + 5vw);
     margin: 50px auto auto auto;
     position: relative;
