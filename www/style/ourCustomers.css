@@ -168,8 +168,8 @@
     /* Section */
     #ourCustomers {
         background-color: black;
-        width: 100vw;
-        padding: 8vh 10% 10% 10%;
+        width: 95vw;
+        padding: 8vh 5% 5% 5%;
         display: grid;
         gap: 5px;
         grid-template-columns: 1fr 1fr;
