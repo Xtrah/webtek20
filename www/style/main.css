@@ -56,6 +56,11 @@ li {
 	font-size:calc(9px + 0.5vw);
 }
 
+/* FRONT PAGE STYLE: */
+#frontPage {
+	padding: 0px;
+}
+
 /* OUR BUSINESS STYLE:
 Text align justify for content of this section. */
 #ourBusiness {
