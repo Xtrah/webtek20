@@ -80,15 +80,16 @@ li {
 
 .headerElements > img {
 	position: absolute;
-	height: 50px;
+	height: 25px;
 	top: 1em;
-	left: 1em;
+	left: 1.5em;
 }
 
 .headerElements > h1 {
 	position: absolute;
-	top: 20vh;
-	font-size:calc(20px + 3vw); 
+	top: 25vh;
+	font-weight: 100;
+	text-shadow: 1px 1px black;
 	color: white;
 	z-index: 10;
 }
@@ -101,6 +102,8 @@ li {
 	animation-iteration-count: infinite;
 }
 
+/* Used this source to understand how the bounce-effect worked.
+Link to source: https://www.developerdrive.com/8-simple-css-hover-effects/*/
 @keyframes bounce {
 	0%, 20%, 60%, 100% {
 		-webkit-transform: translateY(0);
