@@ -64,8 +64,8 @@ nav{
 	.nav-links{
 		position: absolute;
 		right: 0px;
-		height: 93vh;
-		top: 8vh;
+		height: 92.96vh;
+		top: 7.94vh;
 		background-color: black;
 		display: none;
 		flex-direction: column;
