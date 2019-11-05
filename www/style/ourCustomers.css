@@ -1,16 +1,98 @@
-html{
-    scroll-behavior: smooth;
-}
+/* ---------------------------------------- */
+/* ---------- HEADERS AND TITLES ---------- */
+/* ---------------------------------------- */
 
-.testimonials>.textWrapper>h3 {
-    color: black;
-}
-
+/* Section header */
 #ourCustomersTitle {
     margin: auto;
     grid-column: 1/-1;
 }
+/* Targets the names in the testimonials */
+.testimonials>.textWrapper>h3 {
+    color: black;
+    margin-top: 45px;
+    font-weight: bold;
+}
 
+
+
+/* ---------------------------------------------------- */
+/* ---------- TEXT, PARAGGRAPHS AND ELEMENTS ---------- */
+/* ---------------------------------------------------- */
+
+/* Testimonial paragraphs */
+.testimonialAbout {
+    color: black;
+}
+
+/* List elements of what the owner has */
+.testimonialHasList li {
+    color: black;
+}
+
+/* ----------------------------------------------- */
+/* ---------- ANIMATION AND INTERACTION ---------- */
+/* ----------------------------------------------- */
+
+/* Hover animations for the images */
+.testimonialsImgWrapper:hover {
+    transition: 100ms;
+    height: 102px;
+    width: 102px;
+    box-shadow: 0px 0px 10px 1px;
+}
+
+/* Hover animation for testimonial-buttons */
+.testimonialsButtons:hover {
+    background-color: rgb(81, 145, 203);
+    width: 90%;
+    transition: 100ms;
+    cursor: pointer;
+}
+
+/* Animation for testimonial-buttons on click */
+.testimonialsButtons:active {
+    background-color: rgb(81, 145, 203);
+    outline: none;
+}
+
+/* Color change on focus */
+.testimonialsButtons:focus {
+    background-color: rgb(81, 145, 203);
+    outline: none;
+}
+
+/* ---------------------------------------------------- */
+/* ---------- WRAPPERS, CONTAINERS AND LISTS ---------- */
+/* ---------------------------------------------------- */
+
+/* ----- SECTION ----- */
+#ourCustomers {
+    background-color: black;
+    margin: auto;
+    width: 95vw;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 3vh 5px 0 5px 0;
+}
+
+/* ----- TESTIMONIALS ----- */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(210px + 4vh);
+    height: calc(330px + 5vw);
+    margin: 50px auto auto auto;
+    position: relative;
+    padding: 1em;
+    min-width: 170px;
+    background-color: white;
+    border-radius: 1px;
+}
+
+/* IMG-wrapper for the testimonials */
 .testimonialsImgWrapper {
     border-radius: 100px;
     margin: auto;
@@ -22,38 +104,28 @@ html{
     right: 0;
     background-color: white;
     box-shadow: 0px 0px 5px 1px;
+    /* Overflow: hidden to hide possible overflows from the images */
     overflow: hidden;
     transition: 100ms;
 }
 
-.testimonialsImgWrapper:hover {
-    transition: 100ms;
-    height: 102px;
-    width: 102px;
-    box-shadow: 0px 0px 10px 1px;
-}
-
-.testimonialName {
-    margin-top: 45px;
-    font-weight: bold;
-}
-
-.testimonialText {
-    color: black;
-}
-
-.testimonialHas {
+/* What the owner has */
+.testimonialHasList {
     padding: 0 0 0 1em;
-}
-
-.testimonialHas li {
     color: black;
 }
 
+/* Wrapper around al the text innside the testimonial-div */
 .textWrapper{
+    /* Flex-grow makes the content fit so that the buttons stays on the bottom */
     flex-grow: 1;
 }
 
+/* ----------------------------- */
+/* ---------- BUTTONS ---------- */
+/* ----------------------------- */
+
+/* "See for yourself"-buttons that leads to maps */
 .testimonialsButtons {
     width: 85%;
     margin: 0.5em auto;
@@ -64,67 +136,46 @@ html{
     color: white;
     font-weight: bolder;
     transition: 100ms;
-}
-
-.testimonialsButtons:hover {
-    background-color: rgb(81, 145, 203);
-    width: 90%;
-    transition: 100ms;
-    cursor: pointer;
-}
-
-.testimonialsButtons:active {
-    background-color: rgb(81, 145, 203);
-    outline: none;
-
-}
-
-.testimonialsButtons:focus {
-    background-color: rgb(81, 145, 203);
-    outline: none;
-}
-
-#ourCustomers {
-    background-color: black;
-    margin: auto;
-    width: 95vw;
-    display: grid;
-    gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 3vh 5px 0 5px 0;
-}
-
-.testimonials {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: calc(200px + 2vw);
-    height: calc(330px + 5vw);
-    margin: 50px auto auto auto;
-    position: relative;
-    padding: 1em;
-    min-width: 170px;
-    background-color: white;
-    border-radius: 1px;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    /* MIDLERTIDIG XXXXXXXXXXXXXXXXXXXX */
+    font-family: 'Poppins', sans-serif;
+    /* MIDLERTIDIG XXXXXXXXXXXXXXXXXXXX */
+    font-size: 0.8em;
 }
 
+
+
+
+/* ---------------------------- */
+/* ---------- IMAGES ---------- */
+/* ---------------------------- */
+
+/* icon marker */
 .iconMarker{
     height: 1.5em;
-
+    vertical-align: sub;
 }
 
+/* ------------------------------------------------- */
+/* ------- @@@@@ --- MEDIA QUERIES --- @@@@@ ------- */
+/* ------------------------------------------------- */
+
+/* ----- @ IPAD-SIZE @ ----- */
 @media only screen and (max-width: 920px) {
+    /* Section */
     #ourCustomers {
         background-color: black;
-        width: 100vw;
-        padding: 3vw 15% 15% 15%;
+        width: 95vw;
+        padding: 8vh 5% 5% 5%;
         display: grid;
         gap: 5px;
         grid-template-columns: 1fr 1fr;
     }
-
     .testimonials {
-        width: 200px;
+        width: calc(200px + 5vw);
         height: calc(315px + 5vh);
         margin: 70px auto auto auto;
         position: relative;
@@ -136,11 +187,13 @@ html{
 
 }
 
+/* ----- @ MOBILE-SIZE @ ----- */
 @media only screen and (max-width: 590px) {
+    /* Section */
     #ourCustomers {
         background-color: black;
         width: 100vw;
-        padding: 3vw;
+        padding: 8vh 3vw 3vw 3vw;
         display: grid;
         gap: 5px;
         grid-template-columns: 1fr;
@@ -156,5 +209,4 @@ html{
         background-color: white;
         border-radius: 1px;
     }
-
 }
