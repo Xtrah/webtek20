@@ -1,3 +1,7 @@
+#whatWeOffer {
+	padding-bottom: 0%;
+}
+/* The main holder for all module sections within the section */
 #modulHolder {
 	margin: 3%;
 	display: grid;
@@ -5,18 +9,24 @@
 	justify-content: center;
 	grid-gap: 2%;
 }
-
+/* How every module section should look */
 .modulContent { 
 	width: 100%;
 	border-radius: 20px;
 	text-align: center;
 	margin: auto;
 }
+/* Images within the modules */
 .modulContent > img{
 	width: 60%;
 }
 
+.modulContent ul{
+	list-style: none;
+	padding: 0 1em 0 1em;
+}
 
+/* List with custom bullet points */
 .modulContent ul li {
     border-bottom-style: none;
     border-color: #ccc;
@@ -30,36 +40,28 @@
   	background-position: top 0px left 4px;
 }	
 
-.modulContent ul{
-	list-style: none;
-	padding: 0 1em 0 1em;
-}
-
 @media only screen and (max-width: 920px){
+	/* Make the grid to 1 column */
 	#modulHolder {
 		grid-template-columns: 1fr;
 		justify-content: center;
 	}
-	.modulContent ul{
-		padding: 0 4em 0 5em;
-	}
+	/* Make content wider for smaller res */
 	.modulContent{
 		width: 90%;
 	}
-	#whatWeOffer{
-		padding-bottom: 100px;
+	/* Tweaks to make the ul and content rescale better */
+	.modulContent ul{
+		padding: 0 4em 0 5em;
 	}
 	.modulContent ul li {
 		background-position: top 0px left 8px; 
 		background-size: 15px 15px;
 	}
+	/* Change padding so overlap with our customers is avoided */
+	#whatWeOffer {
+		padding-bottom: 40%;
+	}
 }
 
-@media only screen and (max-width: 600px){
-	#modulHolder {
-	grid-template-columns: 1fr;
-	justify-content: center;
-	}
-	
-}
 
