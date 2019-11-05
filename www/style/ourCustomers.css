@@ -72,7 +72,7 @@
     margin: auto;
     width: 95vw;
     display: grid;
-    gap: 5px;
+    gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 3vh 5px 0 5px 0;
 }
@@ -82,7 +82,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: calc(200px + 2vw);
+    width: calc(200px + 2vh);
     height: calc(330px + 5vw);
     margin: 50px auto auto auto;
     position: relative;
@@ -158,13 +158,13 @@
     #ourCustomers {
         background-color: black;
         width: 100vw;
-        padding: 8vh 15% 15% 15%;
+        padding: 8vh 10% 10% 10%;
         display: grid;
         gap: 5px;
         grid-template-columns: 1fr 1fr;
     }
     .testimonials {
-        width: 200px;
+        width: calc(200px + 5vw);
         height: calc(315px + 5vh);
         margin: 70px auto auto auto;
         position: relative;
