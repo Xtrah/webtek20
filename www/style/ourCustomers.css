@@ -51,7 +51,7 @@
 }
 
 .testimonialsButtons {
-    width: 80%;
+    width: 85%;
     margin: 0.5em auto;
     height: 3.5em;
     border-radius: 5px;
@@ -64,7 +64,7 @@
 
 .testimonialsButtons:hover {
     background-color: rgb(81, 145, 203);
-    width: 85%;
+    width: 90%;
     transition: 100ms;
     cursor: pointer;
 }
@@ -102,7 +102,9 @@
     border-radius: 1px;
 }
 
-
+.iconMarker{
+    width: 2em;
+}
 
 @media only screen and (max-width: 920px) {
     #ourCustomers {
