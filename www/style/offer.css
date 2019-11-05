@@ -1,5 +1,5 @@
 #modulHolder {
-	margin: 7%;
+	margin: 3%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
 	justify-content: center;
@@ -52,9 +52,6 @@
 	.modulContent ul li {
 		background-position: top 0px left 8px; 
 		background-size: 15px 15px;
-	}
-	.modulContent ul{
-	padding: 0 1.5em 0 1.5em;
 	}
 }
 
