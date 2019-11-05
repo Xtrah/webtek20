@@ -23,10 +23,16 @@
     margin: 5% 0;
     position: relative;
     text-align: left;
-}
+    padding-left: 30px;
+    background-image: url(../img/whatWeOffer/checkBoxIcon.png);
+ 	background-repeat: no-repeat;
+  	background-size: 20px 20px;
+  	background-position: top 0px left 4px;
+}	
 
 .modulContent ul{
-	padding: 0 2em 0 3.2em;
+	list-style: none;
+	padding: 0 1em 0 1em;
 }
 
 @media only screen and (max-width: 920px){
@@ -43,16 +49,19 @@
 	#whatWeOffer{
 		padding-bottom: 100px;
 	}
+	.modulContent ul li {
+		background-position: top 0px left 8px; 
+		background-size: 15px 15px;
+	}
+	.modulContent ul{
+	padding: 0 1.5em 0 1.5em;
+	}
 }
 
 @media only screen and (max-width: 600px){
 	#modulHolder {
 	grid-template-columns: 1fr;
 	justify-content: center;
-	}
-	.modulContent ul{
-		padding: 0 1.5em 0 1.5em;
-	}
 	.modulContent{
 		width: 60%;
 	}
