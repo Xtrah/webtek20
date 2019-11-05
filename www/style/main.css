@@ -95,3 +95,17 @@ The width is 60vw to get a clean transition from the img gallery. */
         justify-content: center;
     }
 }
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 0.75em;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgba(77, 197, 141, 0.2);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(77, 197, 141, 0.8);
+    border-radius: 0.1em;
+}
