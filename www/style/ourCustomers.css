@@ -1,3 +1,12 @@
+/* ---------------------------------------- */
+/* ---------- HEADERS AND TITLES ---------- */
+/* ---------------------------------------- */
+
+/* Section header */
+#ourCustomersTitle {
+    margin: auto;
+    grid-column: 1/-1;
+}
 /* Targets the names in the testimonials */
 .testimonials>.textWrapper>h3 {
     color: black;
@@ -5,28 +14,25 @@
     font-weight: bold;
 }
 
-/* Section header */
-#ourCustomersTitle {
-    margin: auto;
-    grid-column: 1/-1;
+
+
+/* ---------------------------------------------------- */
+/* ---------- TEXT, PARAGGRAPHS AND ELEMENTS ---------- */
+/* ---------------------------------------------------- */
+
+/* Testimonial paragraphs */
+.testimonialAbout {
+    color: black;
 }
 
-/* IMG-wrapper for the testimonials */
-.testimonialsImgWrapper {
-    border-radius: 100px;
-    margin: auto;
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    top: -50px;
-    left: 0;
-    right: 0;
-    background-color: white;
-    box-shadow: 0px 0px 5px 1px;
-    /* Overflow: hidden to hide possible overflows from the images */
-    overflow: hidden;
-    transition: 100ms;
+/* List elements of what the owner has */
+.testimonialHasList li {
+    color: black;
 }
+
+/* ----------------------------------------------- */
+/* ---------- ANIMATION AND INTERACTION ---------- */
+/* ----------------------------------------------- */
 
 /* Hover animations for the images */
 .testimonialsImgWrapper:hover {
@@ -34,41 +40,6 @@
     height: 102px;
     width: 102px;
     box-shadow: 0px 0px 10px 1px;
-}
-
-/* Testimonial paragraphs */
-.testimonialText {
-    color: black;
-}
-
-/* What the owner has */
-.testimonialHas {
-    padding: 0 0 0 1em;
-    color: black;
-}
-
-/* List elements of what the owner has */
-.testimonialHas li {
-    color: black;
-}
-
-/* Wrapper around al the text innside the testimonial-div */
-.textWrapper{
-    /* Flex-grow makes the content fit so that the buttons stays on the bottom */
-    flex-grow: 1;
-}
-
-/* "See for yourself"-buttons that leads to maps */
-.testimonialsButtons {
-    width: 85%;
-    margin: 0.5em auto;
-    height: 3.5em;
-    border-radius: 5px;
-    border: none;
-    background-color: #5B9BD5;
-    color: white;
-    font-weight: bolder;
-    transition: 100ms;
 }
 
 /* Hover animation for testimonial-buttons */
@@ -90,6 +61,10 @@
     background-color: rgb(81, 145, 203);
     outline: none;
 }
+
+/* ---------------------------------------------------- */
+/* ---------- WRAPPERS, CONTAINERS AND LISTS ---------- */
+/* ---------------------------------------------------- */
 
 /* ----- SECTION ----- */
 #ourCustomers {
@@ -117,14 +92,69 @@
     border-radius: 1px;
 }
 
+/* IMG-wrapper for the testimonials */
+.testimonialsImgWrapper {
+    border-radius: 100px;
+    margin: auto;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: -50px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px;
+    /* Overflow: hidden to hide possible overflows from the images */
+    overflow: hidden;
+    transition: 100ms;
+}
+
+/* What the owner has */
+.testimonialHasList {
+    padding: 0 0 0 1em;
+    color: black;
+}
+
+/* Wrapper around al the text innside the testimonial-div */
+.textWrapper{
+    /* Flex-grow makes the content fit so that the buttons stays on the bottom */
+    flex-grow: 1;
+}
+
+/* ----------------------------- */
+/* ---------- BUTTONS ---------- */
+/* ----------------------------- */
+
+/* "See for yourself"-buttons that leads to maps */
+.testimonialsButtons {
+    width: 85%;
+    margin: 0.5em auto;
+    height: 3.5em;
+    border-radius: 5px;
+    border: none;
+    background-color: #5B9BD5;
+    color: white;
+    font-weight: bolder;
+    transition: 100ms;
+}
+
+/* ---------------------------- */
+/* ---------- IMAGES ---------- */
+/* ---------------------------- */
+
 /* icon marker */
 .iconMarker{
     height: 1.5em;
     vertical-align: sub;
 }
 
-/* ----- IPAD-SIZE ----- */
+/* ------------------------------------------------- */
+/* ------- @@@@@ --- MEDIA QUERIES --- @@@@@ ------- */
+/* ------------------------------------------------- */
+
+/* ----- @ IPAD-SIZE @ ----- */
 @media only screen and (max-width: 920px) {
+    /* Section */
     #ourCustomers {
         background-color: black;
         width: 100vw;
@@ -133,7 +163,6 @@
         gap: 5px;
         grid-template-columns: 1fr 1fr;
     }
-
     .testimonials {
         width: 200px;
         height: calc(315px + 5vh);
@@ -147,8 +176,9 @@
 
 }
 
-/* ----- MOBILE-SIZE ----- */
+/* ----- @ MOBILE-SIZE @ ----- */
 @media only screen and (max-width: 590px) {
+    /* Section */
     #ourCustomers {
         background-color: black;
         width: 100vw;
@@ -168,5 +198,4 @@
         background-color: white;
         border-radius: 1px;
     }
-
 }
