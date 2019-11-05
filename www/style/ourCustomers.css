@@ -86,7 +86,8 @@ html{
 
 #ourCustomers {
     background-color: black;
-    width: 100vw;
+    margin: auto;
+    width: 95vw;
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -109,7 +110,7 @@ html{
 
 .iconMarker{
     height: 1.5em;
-    
+
 }
 
 @media only screen and (max-width: 920px) {
