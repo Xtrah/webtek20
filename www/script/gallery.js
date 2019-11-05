@@ -41,3 +41,5 @@ function gallery(){
 }
 gallery()
 window.addEventListener('resize', gallery)
+
+// Inspiration for this image gallery is partly from W3Schools, MDN, and  DevEd from youtube.com

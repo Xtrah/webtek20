@@ -2,7 +2,7 @@
     position: relative;
     display: block;
     font-family: 'Poppins', sans-serif;
-    width: 60vw;
+    width: 65vw;
     margin: auto;
     overflow: hidden;
 }
@@ -11,8 +11,8 @@
     width: 100%;
 }
 .carousel-container img{
-    width: 60vw;
-    margin: auto
+    width: 65vw;
+    margin: auto;
 }
 .btns{
     border: none;
