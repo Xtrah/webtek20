@@ -117,7 +117,7 @@ html{
     #ourCustomers {
         background-color: black;
         width: 100vw;
-        padding: 3vw 15% 15% 15%;
+        padding: 8vh 15% 15% 15%;
         display: grid;
         gap: 5px;
         grid-template-columns: 1fr 1fr;
@@ -140,7 +140,7 @@ html{
     #ourCustomers {
         background-color: black;
         width: 100vw;
-        padding: 3vw;
+        padding: 8vh 3vw 3vw 3vw;
         display: grid;
         gap: 5px;
         grid-template-columns: 1fr;
