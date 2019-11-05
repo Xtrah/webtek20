@@ -19,6 +19,7 @@ nav{
 	justify-content: space-around;
 	width: 70%;
 	margin: 0;
+	top: 0;
 	list-style: none;
 }
 .nav-links a{
@@ -86,7 +87,6 @@ nav{
 .nav-active{
 	transform: translateX(0);
 	display: flex;
-	position: fixed;
 	background-color: black;
 	color: white;
 }
