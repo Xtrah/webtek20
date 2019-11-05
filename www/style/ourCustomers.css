@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .testimonials>.textWrapper>h3 {
     color: black;
 }
@@ -86,7 +90,7 @@
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 0 5px;
+    padding: 3vh 5px 0 5px 0;
 }
 
 .testimonials {
@@ -104,7 +108,8 @@
 }
 
 .iconMarker{
-    width: 2em;
+    height: 1.5em;
+    
 }
 
 @media only screen and (max-width: 920px) {
