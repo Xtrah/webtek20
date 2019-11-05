@@ -48,21 +48,13 @@ div#contactUsPylon form{
 div#contactUsPylon div{
     height: 15%;
     width: 100%;
-<<<<<<< HEAD
     /* margin-top: 1%; */
-=======
-    margin-top: 1%;
->>>>>>> 9a317f9ad51605d7c220234f33b3f9f1a5e5fbe2
     font-size: 1em;
 
 }
 
 div#contactUsPylon form input, div#contactUsPylon form textarea{
-<<<<<<< HEAD
     /* margin: 1vh 0; */
-=======
-    margin: 1vh 0;
->>>>>>> 9a317f9ad51605d7c220234f33b3f9f1a5e5fbe2
     width: 100%;
     padding: 1vh;
 	resize: none;
@@ -91,49 +83,6 @@ div#contactUsPylon input[type~="submit"]{
     height: auto;
     margin: 0;
     padding: 1.8vh 1vh;
-<<<<<<< HEAD
-=======
-
-    color: white;
-    font-size: 1.5em;
-}
-
-
-/* ^ Kode perfekt for iphone stående */
-/* 
-@media screen and (min-width:450px){
-    div#contactus{
-        grid-template-columns: 1fr 450px 1fr;
-    }
-    div#contactUsPylon{
-        grid-column: 2/3;
-    }
-    div#contactus h2{
-        grid-column: 2/3;
-    }
-}
-
-@media screen and (min-width:450px){
-    div#contactus{
-        grid-template-columns: 1fr 450px 1fr;
-    }
-}
-
-@media screen and (max-height:700px){
-
-    div#contactUsPylon form{
-        top: 100px;
-    }
-
-    div#contactUsPylon form input, div#contactUsPylon form textarea{
-        margin: 7px 0;
-        padding: 7px;
-    }
-
-    div#contactUsPylon{
-        background-position: 0 40px;
-    }
->>>>>>> 9a317f9ad51605d7c220234f33b3f9f1a5e5fbe2
 
     color: white;
     font-size: 1.5em;
@@ -144,25 +93,3 @@ div#contactUsPylon input[type~="submit"]{
         grid-template-columns: 1fr 60vh 1fr;
     }
 }
-<<<<<<< HEAD
-=======
-
-@media screen and (min-height:930px){
-    div#contactus{
-        grid-template-columns: 1fr 3fr 1fr;
-    }
-    div#contactUsPylon form{
-        top: calc(120px + 2%);
-    }
-
-    div#contactUsPylon form input, div#contactUsPylon form textarea{
-        margin: 15px 0;
-        padding: 15px;
-    }
-    div#contactUsPylon{
-        background-position: 0 40px;
-    }
-
-
-} */
->>>>>>> 9a317f9ad51605d7c220234f33b3f9f1a5e5fbe2
