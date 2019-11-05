@@ -1,3 +1,6 @@
+#whatWeOffer {
+	padding-bottom: 0%;
+}
 #modulHolder {
 	margin: 3%;
 	display: grid;
@@ -52,6 +55,9 @@
 	.modulContent ul li {
 		background-position: top 0px left 8px; 
 		background-size: 15px 15px;
+	}
+	#whatWeOffer {
+		padding-bottom: 40%;
 	}
 }
 
