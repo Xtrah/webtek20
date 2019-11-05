@@ -1,12 +1,17 @@
+/* Targets the names in the testimonials */
 .testimonials>.textWrapper>h3 {
     color: black;
+    margin-top: 45px;
+    font-weight: bold;
 }
 
+/* Section header */
 #ourCustomersTitle {
     margin: auto;
     grid-column: 1/-1;
 }
 
+/* IMG-wrapper for the testimonials */
 .testimonialsImgWrapper {
     border-radius: 100px;
     margin: auto;
@@ -18,10 +23,12 @@
     right: 0;
     background-color: white;
     box-shadow: 0px 0px 5px 1px;
+    /* Overflow: hidden to hide possible overflows from the images */
     overflow: hidden;
     transition: 100ms;
 }
 
+/* Hover animations for the images */
 .testimonialsImgWrapper:hover {
     transition: 100ms;
     height: 102px;
@@ -29,27 +36,29 @@
     box-shadow: 0px 0px 10px 1px;
 }
 
-.testimonialName {
-    margin-top: 45px;
-    font-weight: bold;
-}
-
+/* Testimonial paragraphs */
 .testimonialText {
     color: black;
 }
 
+/* Title of what the owner has */
 .testimonialHas {
     padding: 0 0 0 1em;
+    color: black;
 }
 
+/* List elements of what the owner has */
 .testimonialHas li {
     color: black;
 }
 
+/* Wrapper around al the text innside the testimonial-div */
 .textWrapper{
+    /* Flex-grow makes the content fit so that the buttons stays on the bottom */
     flex-grow: 1;
 }
 
+/* "See for yourself"-buttons that leads to maps */
 .testimonialsButtons {
     width: 85%;
     margin: 0.5em auto;
@@ -62,6 +71,7 @@
     transition: 100ms;
 }
 
+/* Hover animation for testimonial-buttons */
 .testimonialsButtons:hover {
     background-color: rgb(81, 145, 203);
     width: 90%;
@@ -69,17 +79,19 @@
     cursor: pointer;
 }
 
+/* Animation for testimonial-buttons on click */
 .testimonialsButtons:active {
     background-color: rgb(81, 145, 203);
     outline: none;
-
 }
 
+/* Color change on focus */
 .testimonialsButtons:focus {
     background-color: rgb(81, 145, 203);
     outline: none;
 }
 
+/* ----- SECTION ----- */
 #ourCustomers {
     background-color: black;
     margin: auto;
@@ -90,6 +102,7 @@
     padding: 3vh 5px 0 5px 0;
 }
 
+/* ----- TESTIMONIALS ----- */
 .testimonials {
     display: flex;
     flex-direction: column;
@@ -104,11 +117,13 @@
     border-radius: 1px;
 }
 
+/* icon marker */
 .iconMarker{
     height: 1.5em;
     vertical-align: sub;
 }
 
+/* ----- IPAD-SIZE ----- */
 @media only screen and (max-width: 920px) {
     #ourCustomers {
         background-color: black;
@@ -132,6 +147,7 @@
 
 }
 
+/* ----- MOBILE-SIZE ----- */
 @media only screen and (max-width: 590px) {
     #ourCustomers {
         background-color: black;
