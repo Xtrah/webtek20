@@ -44,7 +44,7 @@
 		padding: 0 4em 0 5em;
 	}
 	.modulContent{
-		width: 60%;
+		width: 90%;
 	}
 	#whatWeOffer{
 		padding-bottom: 100px;
@@ -62,8 +62,6 @@
 	#modulHolder {
 	grid-template-columns: 1fr;
 	justify-content: center;
-	.modulContent{
-		width: 60%;
 	}
 	
 }
