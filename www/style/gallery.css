@@ -2,16 +2,14 @@
 .carousel-container{
     position: relative;
     display: block;
-    width: 88vw;
     margin: auto;
     overflow: hidden;
 }
 .carousel-slide{
     display: flex;
-    width: 88%;
 }
 .carousel-slide img{
-    width: 100vw;
+    max-width: 100vw;
     margin: auto;
 }
 /* Styling for the buttons on image-gallery */
