@@ -1,12 +1,10 @@
 div#contactus{
   background-image: url("../img/formBackground.jpg");
 	background-position: center;
-	background-repeat: none;
+	background-repeat: no-repeat;
 
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
     
     display: grid;
     grid-template-columns: 1fr 46vh 1fr;
