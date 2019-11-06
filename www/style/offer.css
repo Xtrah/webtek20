@@ -23,6 +23,7 @@
 
 .modulContent ul{
 	list-style: none;
+	display: inline-block;
 	padding: 0 1em 0 1em;
 }
 
@@ -37,7 +38,7 @@
     background-image: url(../img/whatWeOffer/checkBoxIcon.png);
  	background-repeat: no-repeat;
   	background-size: 20px 20px;
-  	background-position: top 0px left 4px;
+  	background-position: top 3px left 4px;
 }	
 
 @media only screen and (max-width: 920px){
@@ -55,6 +56,8 @@
 		padding: 0 4em 0 5em;
 	}
 	.modulContent ul li {
+		text-align: left;
+		background-attachment: 
 		background-position: top 0px left 8px; 
 		background-size: 15px 15px;
 	}
