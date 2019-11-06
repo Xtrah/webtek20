@@ -7,7 +7,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-	font-family: 'Poppins', sans-serif;
     padding-top: 0;
 }
 #footerOne{
@@ -24,13 +23,4 @@
 #footerImg{
     height: calc(30px + 0.5vw);
     padding-right: 10px;
-}
-#footerContactInfo, #footerCopyRight{
-    font-weight: normal !important;
-    font-size: 1.4em !important;
-}
-@media screen and (max-width:768px){
-    h4{
-        font-size: 1em !important;
-    }
 }
