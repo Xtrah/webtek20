@@ -96,10 +96,15 @@ li {
 
 #downBtn{
 	position: absolute;
-	top: 80%;
+	top: 90%;
 	text-decoration: none;
 	animation: bounce 2s;
 	animation-iteration-count: infinite;
+	background-color: transparent;
+	border: none;
+}
+#downBtn:focus {
+	outline: none;
 }
 
 /* Used this source to understand how the bounce-effect worked.
