@@ -13,7 +13,7 @@ body{
 }
 
 /* TEXT */
-p,h1,h2,h3,li,b,strong {
+p,h1,h2,h3,li,b,strong,link,a {
 	color: white;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300i;
