@@ -35,7 +35,8 @@
     width: 8.5%;
     transition: 100ms;
     cursor: pointer;
-}#nextBtn:hover {
+}
+#nextBtn:hover {
     width: 8.5%;
     transition: 100ms;
     cursor: pointer;
