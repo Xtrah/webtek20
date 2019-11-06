@@ -39,6 +39,7 @@ The width is 60vw to get a clean transition from the img gallery. */
     }
     #ourBusiness > .main_ourBusiness {
         width: 90vw;
+        font-size: calc(9px + 0.5vw); 
         display: flex;
         align-items: center;
         justify-content: center;
