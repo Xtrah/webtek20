@@ -1,57 +1,50 @@
+/* Styling for the gallery images and container. */
 .carousel-container{
     position: relative;
     display: block;
-    font-family: 'Poppins', sans-serif;
-    width: 65vw;
     margin: auto;
     overflow: hidden;
 }
 .carousel-slide{
     display: flex;
-    width: 100%;
 }
-.carousel-container img{
-    width: 65vw;
+.carousel-slide img{
+    max-width: 100vw;
     margin: auto;
 }
+/* Styling for the buttons on image-gallery */
 .btns{
-    border: none;
-    border-style: none;
-    cursor: pointer;
-    font-size: 10vw;
-    width: auto;
-    transition: 0.6s ease;
-    top: 8%;
-    font-weight: bold;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
     position: absolute;
-    color: rgba(255, 255, 255, 0.8);
+    top: 50%;
 }
 #prevBtn{
-    padding: 20% 40px 20% 20px;
+    width: 7.5%;
+    transform: translateY(-50%);
+    margin-left: 5px;
 }
 #nextBtn{
     right: 0;
-    border-radius: 3px 0 0 3px;
-    padding: 20% 20px 20% 40px;
+    width: 7.5%;
+    transform: translateY(-50%);
+    margin-right: 5px;
 }
+/* Hover animation for gallery-buttons */
+#prevBtn:hover {
+    width: 8.5%;
+    transition: 100ms;
+    cursor: pointer;
+}
+#nextBtn:hover {
+    width: 8.5%;
+    transition: 100ms;
+    cursor: pointer;
+}
+/* Responsive styling for the gallery */
 @media screen and (max-width:768px){
     .carousel-container{
-        display: block;
         width: 100vw;
-        margin: auto;
-        overflow: hidden;
     }
-    .carousel-container img{
+    .carousel-slide img{
         width: 100vw;
-        margin: auto;
-    }
-    .btns{
-        font-size: 40px;
-        width: auto;
-        transition: 0.6s ease;
-        top: 12%;
     }
 }
