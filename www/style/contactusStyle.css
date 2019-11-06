@@ -77,7 +77,7 @@ div#contactUsPylon div#messagediv{
 }
 
 div#contactUsPylon input[type~="submit"]{
-    width: 100%;
+    width: 95%;
     position: absolute;
     bottom: 0;
     background-color: #5B9BD5;
@@ -86,10 +86,17 @@ div#contactUsPylon input[type~="submit"]{
     right: 0;
     margin: auto;
     padding: 1.8vh 1vh;
-
     color: white;
     font-size: 1.5em;
+    transition: 100ms;
 }
+div#contactUsPylon input[type~="submit"]:hover {
+    background-color: rgba(77, 197, 141, 1);
+    cursor: pointer;
+    width: 100%;
+    transition: 100ms;
+}
+
 
 
 @media screen and (min-width: 600px){
