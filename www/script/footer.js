@@ -1,8 +1,8 @@
 var footer = document.createElement("section")
 var footerOne = document.createElement("div")
 var footerTwo = document.createElement("div")
-var pOne = document.createElement("h4")
-var pTwo = document.createElement("h4")
+var pOne = document.createElement("h3")
+var pTwo = document.createElement("h3")
 var pOneText = document.createTextNode("Vigbjørn Hassel : +47 987 65 432")
 var pTwoText = document.createTextNode("©2019 Hassel Software AS")
 
@@ -24,9 +24,5 @@ footerTwo.appendChild(pTwo)
 footer.setAttribute("id", "footer")
 footerOne.setAttribute("id", "footerOne")
 footerTwo.setAttribute("id", "footerTwo")
-pOne.setAttribute("id", "footerContactInfo")
-pTwo.setAttribute("id", "footerCopyRight")
 
 document.querySelector("body").appendChild(footer)
-console.log("hei big boy")
-
