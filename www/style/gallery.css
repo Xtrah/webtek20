@@ -18,26 +18,15 @@
     top: 50%;
 }
 #prevBtn{
-    width: 7.5%;
     transform: translateY(-50%);
     margin-left: 5px;
+    transform: rotate(90deg);
 }
 #nextBtn{
     right: 0;
-    width: 7.5%;
     transform: translateY(-50%);
     margin-right: 5px;
-}
-/* Hover animation for gallery-buttons */
-#prevBtn:hover {
-    width: 8.5%;
-    transition: 100ms;
-    cursor: pointer;
-}
-#nextBtn:hover {
-    width: 8.5%;
-    transition: 100ms;
-    cursor: pointer;
+    transform: rotate(-90deg);
 }
 /* Responsive styling for the gallery */
 @media screen and (max-width:768px){
