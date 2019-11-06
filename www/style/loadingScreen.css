@@ -9,8 +9,8 @@
 	top: 0;
 	width: 100%;
 	height: 100vh;
-	background-color: white;
-	z-index: 1000;
+	background-color: black;
+	z-index: 9000;
 	transition: 1s;
 	text-align: center;
 }
@@ -21,21 +21,21 @@
 	width: 100vw;
 }
 #leftBrack{
-	transform: translateX(-13%);
-	animation: leftBracket 1s ease-in-out 0s infinite alternate;
+	transform: translateX(-100%);
+	animation: leftBracket 0.5s ease 0s infinite alternate;
 }
 #midLine{
-	width: 3.5vw;
+	width: 6vw;
 	transform: translateX(50%); 
-	animation: midLine 2s ease-in-out 0s infinite alternate;
+	animation: midLine 1s ease 0s infinite;
 }
 #rightBrack{ 
-	transform: translateX(100%);
-	animation: rightBracket 1s ease-in-out 0s infinite alternate;
+	transform: translateX(200%);
+	animation: rightBracket 0.5s ease 0s infinite alternate;
 }
 .loadingImg{
-	margin: 2%;
-	width: 4vw;
+
+	width: 7vw;
 	position: relative;
 }
 
@@ -43,22 +43,29 @@
 .loadingFinished{
 	opacity: 0;
 	pointer-events: none;
+	visibility: hidden;
 }
 
 @keyframes leftBracket{
 	0%{
-		transform: translateX(37%);
+		transform: translateX(-20%);
+	}
+	50%{
+		transform: translateX(-200%);
 	}
 	100%{
-		transform: translateX(-13%);
+		transform: translateX(-200%);
 	}
 }
 @keyframes rightBracket{
 	0%{
-		transform: translateX(0%);
+		transform: translateX(40%);
+	}
+	50%{
+		transform: translateX(200%);
 	}
 	100%{
-		transform: translateX(50%);
+		transform: translateX(200%);
 	}
 }
 @keyframes midLine{
@@ -66,9 +73,9 @@
 		transform: rotate(0deg);
 	}
 	50%{
-		transform: rotate(180deg);
+		transform: rotate(360deg);
 	}
 	100%{
-		transform: rotate(0deg);
+		transform: rotate(360deg);
 	}
 }
