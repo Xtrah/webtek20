@@ -60,7 +60,7 @@ div#contactUsPylon form input, div#contactUsPylon form textarea{
     padding: 1vh;
 	resize: none;
 	background-color: #eeeeee;
-	border: none;
+    border: none;
 }
 
 div#contactUsPylon form textarea{
@@ -90,13 +90,21 @@ div#contactUsPylon input[type~="submit"]{
     font-size: 1.5em;
     transition: 100ms;
 }
+
+/* Hover-effect for submit button */
 div#contactUsPylon input[type~="submit"]:hover {
     background-color: rgba(77, 197, 141, 1);
     cursor: pointer;
     width: 100%;
     transition: 100ms;
 }
-
+/* Active-effect for submit button */
+div#contactUsPylon input[type~="submit"]:active {
+    background-color: rgba(77, 197, 141, 1);
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+}
 
 
 @media screen and (min-width: 600px){
