@@ -12,6 +12,8 @@
     color: black;
     margin-top: 45px;
     font-weight: bold;
+    width: 100%;
+    font-size: 100%;
 }
 
 
@@ -82,8 +84,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: calc(210px + 4vh);
-    height: calc(330px + 5vw);
+    width: calc(170px + 6vh);
+    height: calc(330px + 5vw + 3vh);
     margin: 50px auto auto auto;
     position: relative;
     padding: 1em;
@@ -119,6 +121,7 @@
 .textWrapper{
     /* Flex-grow makes the content fit so that the buttons stays on the bottom */
     flex-grow: 1;
+    width: 100%;
 }
 
 /* ----------------------------- */
