@@ -1,0 +1,47 @@
+/* OUR BUSINESS STYLE:
+Text align justify for content of this section. */
+#ourBusiness {
+    text-align: justify;
+}
+
+/* main-ourBusiness has 1fr for img, and 5fr for the p-element.
+The width is 60vw to get a clean transition from the img gallery. */
+.main_ourBusiness {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    width: 90vw;
+    margin: auto;
+}
+
+#ourBusiness > .main_ourBusiness > p {
+    font-size: 1.5em;
+}
+
+
+/* Strong style. */
+#ourBusiness > .main_ourBusiness > p > strong {
+    font-size: 1.05em;
+    color: #4DC58D;
+}
+
+/* The img position. */
+#ourBusiness > .main_ourBusiness > img {
+    position: relative;
+    width: auto; 
+    height: 50vh;
+    margin-left: 10%;
+}
+
+/* Responsive for mobile. */
+@media only screen and (max-width: 768px) {
+    #ourBusiness > .main_ourBusiness > img {
+        display: none;
+    }
+    #ourBusiness > .main_ourBusiness {
+        width: 90vw;
+        font-size: calc(9px + 0.5vw); 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -10,17 +10,26 @@
     <link rel="stylesheet" href="style/main.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,700&display=swap" rel="stylesheet">
     <!-- custom stylesheets -->
+    <link rel="stylesheet" href="style/frontPage.css">
     <link rel="stylesheet" href="style/offer.css">
     <link rel="stylesheet" href="style/ourCustomers.css">
     <link rel="stylesheet" href="style/gallery.css">
-    <link rel="stylesheet" href="style/our_business.css">
+    <link rel="stylesheet" href="style/ourBusiness.css">
     <link rel="stylesheet" href="style/contactusStyle.css">
     <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/loadingScreen.css">
     <title>Hassel Software</title>
 </head>
 
 <body>
+    <div id="loadingScreen" class="">
+        <div id="loadingIconContainer">
+            <img id="leftBrack" class="loadingImg" src="./img/leftBrack.png" alt="left bracket">
+            <img id="midLine" class="loadingImg" src="./img/midLine.png" alt="middle line">
+            <img id="rightBrack" class="loadingImg" src="./img/rightBrack.png" alt="right bracket">
+        </div>
+    </div>      
     <section id="frontPage">
         <div id="videoContainer">
             
@@ -29,10 +38,15 @@
             </video>
            
         </div>
+        <div id="mobileFP">
+            <img src="./img/FormBackground.png">
+        </div>
         <div class="headerElements">
-            <img src="./img/hasselTransparent.png" type="image">
+            <img src="./img/frontPage/hasselTransparent.png" type="image">
             <h1>Dette er en påstand</h1>
-            <a id="downBtn" class="btns" href="#whatWeOffer">&or;</a>
+            <a id="downBtn" href="#whatWeOffer">
+                <img src="img/frontPage/Arrow.png">
+            </a>
         </div>
         
     </section>
@@ -63,45 +77,45 @@
                 <img src="img/whatWeOffer/pylonModuleIcon.png">
                 <h3>Pylon</h3>
                 <ul>
-                    <li>Eksempeltekst på hva denne modulen handler om. Denne modulen er kjempenyttig!</li>
-                    <li>Eksempeltekst på hva denne modulen handler om. Denne modulen er kjempenyttig!</li>
-                    <li>Eksempeltekst på hva denne modulen handler om. Denne modulen er kjempenyttig!</li>
+                    <li>Eksempel på hva denne modulen handler om.</li>
+                    <li>Eksempel på hva denne modulen handler om.</li>
+                    <li>Eksempel på hva denne modulen handler om.</li>
                 </ul>
             </div>
             <div class="modulContent">
                 <img src="img/whatWeOffer/testdriveModuleIcon.png">
                 <h3>Test-driving</h3>
                 <ul>
-                    <li>Eksempeltekst på hva denne modulen handler om. Denne modulen er kjempenyttig!</li>
-                    <li>Eksempeltekst på hva denne modulen handler om. Denne modulen er kjempenyttig!</li>
-                    <li>Eksempeltekst på hva denne modulen handler om. Denne modulen er kjempenyttig!</li>
+                    <li>Eksempel på hva denne modulen handler om.</li>
+                    <li>Eksempel på hva denne modulen handler om.</li>
+                    <li>Eksempel på hva denne modulen handler om.</li>
                 </ul>
             </div>
             <div class="modulContent">
                 <img src="img/whatWeOffer/reservationModuleIcon.png">
                 <h3>Reservations</h3>
                 <ul>
-                    <li>Eksempeltekst på hva denne modulen handler om. Denne modulen er kjempenyttig!</li>
-                    <li>Eksempeltekst på hva denne modulen handler om. Denne modulen er kjempenyttig!</li>
-                    <li>Eksempeltekst på hva denne modulen handler om. Denne modulen er kjempenyttig!</li>
+                    <li>Eksempel på hva denne modulen handler om.</li>
+                    <li>Eksempel på hva denne modulen handler om.</li>
+                    <li>Eksempel på hva denne modulen handler om.</li>
                 </ul>
             </div>
             <div class="modulContent">
                 <img src="img/whatWeOffer/onlineModuleIcon.png">
                 <h3>Online store</h3>
                 <ul>
-                    <li>Eksempeltekst på hva denne modulen handler om. Denne modulen er kjempenyttig!</li>
-                    <li>Eksempeltekst på hva denne modulen handler om. Denne modulen er kjempenyttig!</li>
-                    <li>Eksempeltekst på hva denne modulen handler om. Denne modulen er kjempenyttig!</li>
+                    <li>Eksempel på hva denne modulen handler om.</li>
+                    <li>Eksempel på hva denne modulen handler om.</li>
+                    <li>Eksempel på hva denne modulen handler om.</li>
                 </ul>
             </div>
             <div class="modulContent">
                 <img src="img/whatWeOffer/adminModuleIcon.png">
                 <h3>Administration</h3>
                 <ul>
-                    <li>Eksempeltekst på hva denne modulen handler om. Denne modulen er kjempenyttig!</li>
-                    <li>Eksempeltekst på hva denne modulen handler om. Denne modulen er kjempenyttig!</li>
-                    <li>Eksempeltekst på hva denne modulen handler om. Denne modulen er kjempenyttig!</li>
+                    <li>Eksempel på hva denne modulen handler om.</li>
+                    <li>Eksempel på hva denne modulen handler om.</li>
+                    <li>Eksempel på hva denne modulen handler om.</li>
                 </ul>
             </div>
         </div>
@@ -199,6 +213,7 @@
         <h1>Our business</h1>
         <div class="main_ourBusiness">
             <p>
+                <br>
                 Hassel Software is a Norwegian tech startup created by a company with
                 more than a <strong>hundred years experience</strong> of selling and distributing cars.
                 Since 2015, we have developed software to digitize traditional dealerships
@@ -208,7 +223,7 @@
                 also provides unparalleled efficiency, uniformity and control of the
                 management of <strong>your network</strong>.
             </p>
-            <img src="img/our_business/ourBusiness.png" alt="product" width="auto" height="200px">
+            <img src="img/our_business/ourBusiness.png" alt="product">
         </div>
     </section>
 
@@ -261,6 +276,7 @@
     <script src="script/gallery.js"></script>
     <script src="script/navBurger.js"></script>
     <script src="script/footer.js"></script>
+    <script src="script/loadingScreen.js"></script>
 </body>
 
 </html>
