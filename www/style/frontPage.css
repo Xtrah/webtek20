@@ -80,4 +80,7 @@ Link to source: https://www.developerdrive.com/8-simple-css-hover-effects/*/
     #mobileFP {
         display: block;
     }
+    #mobileFP > img {
+        height: 100vh;
+    }
 }
