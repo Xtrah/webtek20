@@ -1,8 +1,9 @@
 div#contactus{
     background-image: url("../img/FormBackground.png");
-	background-position: center;
-	background-repeat: none;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     
     display: grid;
     grid-template-columns: 1fr 46vh 1fr;
@@ -59,7 +60,7 @@ div#contactUsPylon form input, div#contactUsPylon form textarea{
     padding: 1vh;
 	resize: none;
 	background-color: #eeeeee;
-	border: none;
+    border: none;
 }
 
 div#contactUsPylon form textarea{
@@ -76,20 +77,41 @@ div#contactUsPylon div#messagediv{
 }
 
 div#contactUsPylon input[type~="submit"]{
-    width: 50%;
+    width: 95%;
     position: absolute;
     bottom: 0;
     background-color: #5B9BD5;
     height: auto;
-    margin: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     padding: 1.8vh 1vh;
-
     color: white;
     font-size: 1.5em;
+    transition: 100ms;
 }
+
+/* Hover-effect for submit button */
+div#contactUsPylon input[type~="submit"]:hover {
+    background-color: rgba(77, 197, 141, 1);
+    cursor: pointer;
+    width: 100%;
+    transition: 100ms;
+}
+/* Active-effect for submit button */
+div#contactUsPylon input[type~="submit"]:active {
+    background-color: rgba(77, 197, 141, 1);
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+}
+
 
 @media screen and (min-width: 600px){
     div#contactus{
         grid-template-columns: 1fr 60vh 1fr;
     }
 }
+
+
+
