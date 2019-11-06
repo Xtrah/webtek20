@@ -12,6 +12,8 @@
     color: black;
     margin-top: 45px;
     font-weight: bold;
+    width: 100%;
+    font-size: 100%;
 }
 
 
@@ -44,21 +46,22 @@
 
 /* Hover animation for testimonial-buttons */
 .testimonialsButtons:hover {
-    background-color: rgb(81, 145, 203);
-    width: 90%;
+    /* background-color: rgb(81, 145, 203); */
+    background-color: rgba(77, 197, 141, 1);
+    color: white;
+    width: 100%;
     transition: 100ms;
     cursor: pointer;
 }
 
 /* Animation for testimonial-buttons on click */
 .testimonialsButtons:active {
-    background-color: rgb(81, 145, 203);
+    background-color: rgba(65, 185, 129, 1);
     outline: none;
 }
 
 /* Color change on focus */
 .testimonialsButtons:focus {
-    background-color: rgb(81, 145, 203);
     outline: none;
 }
 
@@ -82,14 +85,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: calc(210px + 4vh);
-    height: calc(330px + 5vw);
+    width: calc(170px + 6vh);
+    height: calc(330px + 5vw + 3vh);
     margin: 50px auto auto auto;
     position: relative;
-    padding: 1em;
+    padding: 5%;
     min-width: 170px;
     background-color: white;
-    border-radius: 1px;
+    border-radius: 5px;
 }
 
 /* IMG-wrapper for the testimonials */
@@ -119,6 +122,7 @@
 .textWrapper{
     /* Flex-grow makes the content fit so that the buttons stays on the bottom */
     flex-grow: 1;
+    width: 100%;
 }
 
 /* ----------------------------- */
@@ -127,7 +131,7 @@
 
 /* "See for yourself"-buttons that leads to maps */
 .testimonialsButtons {
-    width: 85%;
+    width: 95%;
     margin: 0.5em auto;
     height: 3.5em;
     border-radius: 5px;
@@ -179,10 +183,8 @@
         height: calc(315px + 5vh);
         margin: 70px auto auto auto;
         position: relative;
-        padding: 1em;
         min-width: 170px;
         background-color: white;
-        border-radius: 1px;
     }
 
 }
@@ -204,9 +206,7 @@
         height: calc(300px + 5vh);
         margin: 70px auto auto auto;
         position: relative;
-        padding: 1em;
         min-width: 170px;
         background-color: white;
-        border-radius: 1px;
     }
 }
