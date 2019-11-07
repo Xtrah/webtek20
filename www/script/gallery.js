@@ -1,4 +1,5 @@
 //Creatint a function that handles the image gallery functionality
+//This function needs to be called after completed page load, so it gets called in the js file loadingScreen.js
 
 export function gallery(){
     // selecting the carousel img and slide div.
