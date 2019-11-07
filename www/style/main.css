@@ -13,6 +13,7 @@
 img{
 	pointer-events: none;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -26,18 +27,18 @@ p,h1,h2,h3,li,b,strong,link,a {
 	color: white;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300i;
-	font-size:calc(10px + 0.5vw);
+	font-size:calc(12px + 0.5vw);
 }
 
 /* General text. Content on testimonials */
 p {
-	font-size:calc(9px + 0.5vw); 
+	font-size:calc(12px + 0.5vw); 
 }
 
 
 /* Strong text together with the p-element. */
 strong{
-	font-size:calc(10px + 0.5vw);
+	font-size:calc(12px + 0.5vw);
 	color: #5B9BD5;
 }
 
@@ -66,7 +67,7 @@ h3{
 
 /* List element in our customers and under what we offer. */ 
 li {
-	font-size:calc(9px + 0.5vw);
+	font-size:calc(12px + 0.5vw);
 }
 
 /* ----- SCROLLBAR ----- */
