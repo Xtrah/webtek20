@@ -45,9 +45,7 @@ function gallery(){
         }
     })
 }
-
-gallery()
 //Calling the gallery function every time the browsers viewport resizes to handle issues with horisontal images, and next one it transition either way X image width.
 window.addEventListener('resize', gallery)
-
+gallery()
 // Inspiration for this image gallery is partly from W3Schools, MDN, and  DevEd from youtube.com
