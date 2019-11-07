@@ -133,5 +133,14 @@ div#contactUsPylon input[type~="submit"]:active {
 
 }
 
-
-
+@media screen and (max-width: 340px){
+    div#contactus{
+        grid-template-columns: 1fr;
+    }
+    div#contactUsPylon{
+        grid-column: 1/2;
+    }
+    #contactus h1{
+        grid-column: 1/2;
+    }
+}
