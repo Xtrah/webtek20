@@ -19,12 +19,10 @@
 }
 #prevBtn{
     transform: translateY(-50%);
-    /* transform: rotate(90deg); */
 }
 #nextBtn{
     right: 0;
     transform: translateY(-50%);
-    /* transform: rotate(-90deg); */
 }
 /* Responsive styling for the gallery */
 @media screen and (max-width:768px){
