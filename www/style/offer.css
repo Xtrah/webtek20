@@ -51,6 +51,10 @@
 	.modulContent{
 		width: 90%;
 	}
+	/* Image rescaling on samll res */
+	.modulContent > img{
+		width: 40%;
+	}
 	/* Tweaks to make the ul and content rescale better */
 	.modulContent ul{
 		padding: 0 4em 0 5em;
