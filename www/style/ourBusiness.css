@@ -1,11 +1,14 @@
-/* OUR BUSINESS STYLE:
-Text align justify for content of this section. */
+/* ---------------------------------------- */
+/* ------------- OUR BUSINESS ------------- */
+/* ---------------------------------------- */
+
+/* Section: Justify all text content */
 #ourBusiness {
     text-align: justify;
 }
 
-/* main-ourBusiness has 1fr for img, and 5fr for the p-element.
-The width is 60vw to get a clean transition from the img gallery. */
+/* main_ourBusiness has 1fr for img, and 4fr for the p-element.
+The width is 90vw to get a clean transition from the img gallery. */
 .main_ourBusiness {
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -13,18 +16,18 @@ The width is 60vw to get a clean transition from the img gallery. */
     margin: auto;
 }
 
+/* Bigger font-size for the paragraph in this section */
 #ourBusiness > .main_ourBusiness > p {
     font-size: 1.5em;
 }
 
-
-/* Strong style. */
+/* Strong style */
 #ourBusiness > .main_ourBusiness > p > strong {
     font-size: 1.05em;
     color: #4DC58D;
 }
 
-/* The img position. */
+/* Img position and size */
 #ourBusiness > .main_ourBusiness > img {
     position: relative;
     width: auto; 
@@ -32,7 +35,11 @@ The width is 60vw to get a clean transition from the img gallery. */
     margin-left: 10%;
 }
 
-/* Responsive for mobile. */
+/* ---------------------------------------- */
+/* -------- RESPONSIVE FOR MOBILE --------- */
+/* ---------------------------------------- */
+
+/* Img will not be displayed, and center content */
 @media only screen and (max-width: 768px) {
     #ourBusiness > .main_ourBusiness > img {
         display: none;
