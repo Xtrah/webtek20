@@ -115,6 +115,7 @@
     overflow: hidden;
     transition: 100ms;
     background-image: url(../img/hyundaiLogo.jpg);
+    padding: 0.5em;
 }
 .testimonialsImgWrapper img{
     width: 100%;
