@@ -106,7 +106,7 @@
 /* ---------------------------------------- */
 
 /* Used this source to understand how the bounce-effect worked.
-Link to source: https://www.developerdrive.com/8-simple-css-hover-effects/*/
+Link to source: https://stackoverflow.com/questions/29005916/make-button-bounce-with-css3 */
 @keyframes bounce {
 	0%, 20%, 60%, 100% {
 		-webkit-transform: translateY(0);
