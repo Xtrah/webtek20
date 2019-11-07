@@ -38,12 +38,16 @@
 .headerElements > h1 {
 	position: absolute;
 	top: 25vh;
-	font-weight: 100;
-	text-shadow: 1px 1px black;
+	font-weight: 700;	
+	text-shadow: 1px 1px 7px black;
 	color: white;
 	z-index: 10;
 }
-
+.headerElements > h3 {
+	position: absolute;
+	top: 35vh;
+	font-weight: 100;
+}
 .headerElements > a {
     position: absolute;
     top: 90%;
@@ -55,6 +59,14 @@
 }
 #downBtn:focus {
 	outline: none;
+}
+#darkOverlay{
+	position: absolute;
+	background-color: rgba(0,0,0,0.8);
+	min-height: 100%;
+	min-width: 100%;
+	z-index: 0;
+
 }
 
 /* Used this source to understand how the bounce-effect worked.
@@ -88,5 +100,12 @@ Link to source: https://www.developerdrive.com/8-simple-css-hover-effects/*/
     }
     .headerElements > a {
     	top: 85vh;
+    }
+    .headerElements > h3 {
+    	display: none;
+    }
+    #darkOverlay{
+    	display: none;
+
     }
 }
