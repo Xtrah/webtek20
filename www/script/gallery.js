@@ -1,6 +1,7 @@
 //Creatint a function that handles the image gallery functionality
+//This function needs to be called after completed page load, so it gets called in the js file loadingScreen.js
 
-function gallery(){
+export function gallery(){
     // selecting the carousel img and slide div.
     const carouselSlide = document.querySelector('.carousel-slide')
     const carouselImages = document.querySelectorAll('.carousel-slide > img')
@@ -47,5 +48,4 @@ function gallery(){
 }
 //Calling the gallery function every time the browsers viewport resizes to handle issues with horisontal images, and next one it transition either way X image width.
 window.addEventListener('resize', gallery)
-gallery()
 // Inspiration for this image gallery is partly from W3Schools, MDN, and  DevEd from youtube.com
