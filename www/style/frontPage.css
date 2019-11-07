@@ -9,6 +9,7 @@
     width: 100vw;
 	overflow: hidden; 
 }
+
 #videoContainer > video {
 	min-height: 100vh;
 	min-width: 100vw;
@@ -45,7 +46,7 @@
 }
 .headerElements > h3 {
 	position: absolute;
-	top: 35vh;
+	top: 37vh;
 	font-weight: 100;
 }
 .headerElements > a {
@@ -62,7 +63,7 @@
 }
 #darkOverlay{
 	position: absolute;
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.7);
 	min-height: 100%;
 	min-width: 100%;
 	z-index: 0;
@@ -108,4 +109,14 @@ Link to source: https://www.developerdrive.com/8-simple-css-hover-effects/*/
     	display: none;
 
     }
+}
+
+@media only screen and (max-width: 750px) {
+	.headerElements > h1 {
+		font-size: calc(15px + 0.8vw);
+	}
+	.headerElements > img {
+		left: 50%;
+		transform: translate(-50%);
+	}
 }
