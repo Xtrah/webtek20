@@ -16,6 +16,7 @@
 .btns{
     position: absolute;
     pointer-events: auto;
+    top: 50%;
 }
 #prevBtn{
     transform: translateY(-50%);
