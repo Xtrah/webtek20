@@ -1,9 +1,4 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
+/* BACKGROUND */ 
 #loadingScreen{
 	position: fixed;
 	top: 0;
@@ -15,6 +10,7 @@
 	text-align: center;
 }
 
+/* ELEMENTS & PLACEMENT */
 #loadingIconContainer{
 	top: 40%;
 	position: relative;
@@ -34,18 +30,17 @@
 	animation: rightBracket 0.5s ease 0s infinite alternate;
 }
 .loadingImg{
-
 	width: 7vw;
 	position: relative;
 }
 
-
+/* CLASS TO ADD ON FINISH */
 .loadingFinished{
 	opacity: 0;
 	pointer-events: none;
 	visibility: hidden;
 }
-
+/* ANIMATIONS */
 @keyframes leftBracket{
 	0%{
 		transform: translateX(-20%);
