@@ -10,10 +10,6 @@
   background: #4DC58D;
 }
 
-img{
-	pointer-events: none;
-}
-
 html{
     scroll-behavior: smooth;
 }
