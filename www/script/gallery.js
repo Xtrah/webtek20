@@ -1,5 +1,7 @@
+//Creatint a function that handles the image gallery functionality
+
 function gallery(){
-    // Responsiv slider carousel functionality
+    // selecting the carousel img and slide div.
     const carouselSlide = document.querySelector('.carousel-slide')
     const carouselImages = document.querySelectorAll('.carousel-slide > img')
     // Buttons
@@ -13,6 +15,9 @@ function gallery(){
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'
 
     //Button listeners
+    // Next/previous image functionality, all images are stacked next to each other horoziontally, 
+    // and then next image is displayed by translate/transformX with the current images width times the counter that indicates where in the cycle we are.
+
     nextBtn.addEventListener('click', ()=>{
         if (counter >= carouselImages.length-1) return
         carouselSlide.style.transition = "transform 0.4s ease-in-out"
@@ -26,6 +31,7 @@ function gallery(){
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'
     })
 
+    //Adding first and last clone, to create an infinate loop, so that we can go either way "full circle".
     carouselSlide.addEventListener('transitionend', ()=>{
         if (carouselImages[counter].id === 'lastClone') {
             carouselSlide.style.transition = "none"
@@ -39,7 +45,9 @@ function gallery(){
         }
     })
 }
+
 gallery()
+//Calling the gallery function every time the browsers viewport resizes to handle issues with horisontal images, and next one it transition either way X image width.
 window.addEventListener('resize', gallery)
 
 // Inspiration for this image gallery is partly from W3Schools, MDN, and  DevEd from youtube.com
