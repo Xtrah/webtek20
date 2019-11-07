@@ -10,11 +10,13 @@
 /* Targets the names in the testimonials */
 .testimonials>.textWrapper>h3 {
     color: black;
-    margin-top: 45px;
+    margin-top: 1em;
     font-weight: bold;
     width: 100%;
     font-size: 100%;
 }
+
+
 
 
 
@@ -86,7 +88,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: calc(120px + 40%);
-    height: calc(330px + 5vw + 3vh);
+    height: calc(330px + 8vh + 2vw);
     margin: 50px auto auto auto;
     position: relative;
     padding: 5%;
@@ -113,6 +115,7 @@
     overflow: hidden;
     transition: 100ms;
     background-image: url(../img/hyundaiLogo.jpg);
+    padding: 0.5em;
 }
 .testimonialsImgWrapper img{
     width: 100%;
@@ -129,6 +132,7 @@
     /* Flex-grow makes the content fit so that the buttons stays on the bottom */
     flex-grow: 1;
     width: 100%;
+    margin-top: 30px;
 }
 
 /* ----------------------------- */
@@ -185,12 +189,14 @@
         grid-template-columns: 1fr 1fr;
     }
     .testimonials {
-        width: calc(200px + 5vw);
-        height: calc(315px + 5vh);
+        width: calc(200px + 6vw);
+        /* height: calc(330px + 10vh - 2vw); */
+        height: calc(320px + 3vh + 1vw);
         margin: 70px auto auto auto;
         position: relative;
         min-width: 170px;
         background-color: white;
+        padding: 1em;
     }
 
 }
@@ -209,10 +215,11 @@
 
     .testimonials {
         width: calc(200px + 2vw);
-        height: calc(300px + 5vh);
+        height: calc(320px + 5vh + 1vw);
         margin: 70px auto auto auto;
         position: relative;
         min-width: 170px;
         background-color: white;
     }
+    
 }
