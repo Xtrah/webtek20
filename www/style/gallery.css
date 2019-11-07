@@ -11,23 +11,20 @@
 .carousel-slide img{
     max-width: 100vw;
     margin: auto;
-    pointer-events: auto;
 }
 /* Styling for the buttons on image-gallery */
 .btns{
     position: absolute;
-    top: 50%;
+    pointer-events: auto;
 }
 #prevBtn{
     transform: translateY(-50%);
-    margin-left: 5px;
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
 }
 #nextBtn{
     right: 0;
     transform: translateY(-50%);
-    margin-right: 5px;
-    transform: rotate(-90deg);
+    /* transform: rotate(-90deg); */
 }
 /* Responsive styling for the gallery */
 @media screen and (max-width:768px){
@@ -36,5 +33,20 @@
     }
     .carousel-slide img{
         width: 100vw;
+    }
+    .btns{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #prevBtn{
+        height: 30%;
+        height: 80%;
+        padding: 40px 0;
+    }
+    #nextBtn{
+        right: 0;
+        width: auto;
+        height: 80%;
+        padding: 40px 0;
     }
 }
