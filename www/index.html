@@ -24,31 +24,15 @@
     <title>Hassel Software</title>
 </head>
 
-<!-- 
-    NOTES ON COMMENTS:
-    
-    All sections are wrapped by a section-tag. <section></section>
-    All but one section (gallery) have a h1-tag that contains the title of the section.
-
-    All id's and classes should be self explanitory, but we have inluded some comments to clarify possible misunderstandings.
--->
-
 <body>
-    <!-- Div containing loading screen -->
     <div id="loadingScreen" class="">
-        <!-- div containing all the icon parts of the loading screen -->
         <div id="loadingIconContainer">
             <img id="leftBrack" class="loadingImg" src="./img/leftBrack.png" alt="left bracket">
             <img id="midLine" class="loadingImg" src="./img/midLine.png" alt="middle line">
             <img id="rightBrack" class="loadingImg" src="./img/rightBrack.png" alt="right bracket">
         </div>
-    </div>
-
-    <!-- -------------------------------- -->
-    <!-- |||||||||| FRONT PAGE |||||||||| -->
-    <!-- -------------------------------- -->
+    </div>      
     <section id="frontPage">
-        <!-- Front page for mobile -->
         <div id="mobileFP">
             <img src="./img/formBackground.jpg">
         </div>
@@ -58,14 +42,10 @@
                     <source src="./video/HS.mp4" type="video/mp4">
                 </video>
             </div>
-            <!-- Overlay to make the background image/video darker -->
             <div id="darkOverlay"></div>
             <img src="./img/frontPage/hasselTransparent.png" type="image">
-            <!-- Main claim/assertion -->
             <h1>Vi tilbyr det beste som kan tilbys</h1>
-            <!-- Subclaim -->
             <h3>Underpåstand som skal overbevise de med penger i lomma</h3>
-            <!-- Button anchored to next section -->
             <a id="downBtn" href="#whatWeOffer">
                 <img src="img/frontPage/Arrow.png">
             </a>
@@ -73,9 +53,6 @@
 
     </section>
 
-    <!-- ---------------------------- -->
-    <!-- |||||||||| NAVBAR |||||||||| -->
-    <!-- ---------------------------- -->
     <nav>
         <ul class="nav-links">
             <li><a href="#whatWeOffer">What We Offer</a></li>
@@ -84,7 +61,6 @@
             <li><a href="#ourBusiness">Our Business</a></li>
             <li><a href="#contactUs">Contact Us</a></li>
         </ul>
-        <!-- The "burger" is the three-lined symbol that opens the navigation menu -->
         <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -92,9 +68,6 @@
         </div>
     </nav>
 
-    <!-- ----------------------------------- -->
-    <!-- |||||||||| WHAT WE OFFER |||||||||| -->
-    <!-- ----------------------------------- -->
     <section id="whatWeOffer">
         <h1>What We Offer</h1>
         <h2>En sub-påstand under</h2>
@@ -104,7 +77,6 @@
             <div class="modulContent">
                 <img src="img/whatWeOffer/pylonModuleIcon.png">
                 <h3>Pylon</h3>
-                <!-- List of info about each feature/solution that the client offers -->
                 <ul>
                     <li>Eksempel på hva denne modulen handler om.</li>
                     <li>Eksempel på hva denne modulen handler om.</li>
@@ -150,18 +122,24 @@
         </div>
     </section>
 
-    <!-- ------------------------------------------- -->
-    <!-- |||||||||| Our customers section |||||||||| -->
-    <!-- ------------------------------------------- -->
     <section id="ourCustomers">
-        <!-- Title -->
         <h1 id="ourCustomersTitle">Our Customers</h1>
-        <!-- Testimonial -->
         <div class="testimonials">
-            <!-- Testimonial image wrapper -->
-            <div class="testimonialsImgWrapper">
-                <!-- Image of logo -->
-                <img src="img/hyundaiLogo.jpg" alt="hyundaiLogo" class="testimonialImg">
+                <div class="testimonialsImgWrapper">
+                    <img src="img/hyundaiLogo.jpg" alt="hyundaiLogo" class="testimonialImg">
+                </div>
+                <div class="textWrapper">
+                    <h3 class="testimonialName">Hyundai Motor Norway AS</h3>
+                <p class="testimonialAbout">Importerer og distribuerer Hyundai i Norge</p>
+                <h3 class="testimonialweHaveTitle">We have:</h3>
+                <ul class="testimonialHasList">
+                    <li>Forhandlermodul</li>
+                    <li>Pylons</li>
+                    <li>Webshop</li>
+                </ul>
+                </div>
+                
+                <a href='https://goo.gl/maps/cZMAtM4xaeoNsazeA' target="blank_" class="testimonialsButtons"> <img class="iconMarker" src="./img/stedIcon.png" alt=""> See for yourself</a>
             </div>
             <!-- Textwrapper that contains all the text in the div besides the button text -->
             <div class="textWrapper">
@@ -223,7 +201,8 @@
         <div class="testimonials">
             <div class="testimonialsImgWrapper">
 
-                <img src="img/mobile-logo-v2.svg" alt="mobileLogo" class="testimonialImg">
+                <img src="img/mobile-logo-v2.svg" alt="mobileLogo"class="testimonialImg">
+
             </div>
             <div class="textWrapper">
                 <h3 class="testimonialName">Mobile AS avd Ensjø</h3>
