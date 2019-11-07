@@ -1,8 +1,17 @@
-/* FRONT PAGE STYLE: */
+/* ---------------------------------------- */
+/* ------------- FRONT PAGE --------------- */
+/* ---------------------------------------- */
+
+/* Front page section */
 #frontPage {
 	padding: 0px;
 }
 
+/* ---------------------------------------- */
+/* ------ VIDEO CONTAINER AND VIDEO ------- */
+/* ---------------------------------------- */
+
+/* Video container: Position, size and effects */
 #videoContainer {
 	position: relative;
     height: 100vh;
@@ -10,11 +19,18 @@
 	overflow: hidden; 
 }
 
+/* Video size and effects */
 #videoContainer > video {
 	min-height: 100vh;
 	min-width: 100vw;
 	box-shadow: inset 0 0 100px black;
 }
+
+/* ---------------------------------------- */
+/* -------- FRONT PAGE FOR MOBILE --------- */
+/* ---------------------------------------- */
+
+/* Video container for mobile: Position, size and effects */
 #mobileFP {
     position: relative;
     height: 100vh;
@@ -23,12 +39,18 @@
     display: none;
 }
 
+/* ---------------------------------------- */
+/* ----------- HEADER ELEMENTS ------------ */
+/* ---------------------------------------- */
+
+/* Header elements: Content positions */
 .headerElements {
 	display: flex;
 	justify-content: center;
 	justify-items: center;
 }
 
+/* Logo: Position and size */
 .headerElements > img {
 	position: absolute;
 	height: 25px;
@@ -36,6 +58,7 @@
 	left: 1.5em;
 }
 
+/* h1 formating */
 .headerElements > h1 {
 	position: absolute;
 	top: 25vh;
@@ -44,11 +67,15 @@
 	color: white;
 	z-index: 10;
 }
+
+/* h1 formating */
 .headerElements > h3 {
 	position: absolute;
 	top: 37vh;
 	font-weight: 100;
 }
+
+/* Down arrow: Position, style and activate bounce effect */
 .headerElements > a {
     position: absolute;
     top: 90%;
@@ -58,9 +85,13 @@
 	background-color: transparent;
 	border: none;
 }
+
+/* Down arrow on focus style */
 #downBtn:focus {
 	outline: none;
 }
+
+/* Dark overlay on background */
 #darkOverlay{
 	position: absolute;
 	background-color: rgba(0,0,0,0.7);
@@ -69,6 +100,10 @@
 	z-index: 0;
 
 }
+
+/* ---------------------------------------- */
+/* --------- HOVER BOUNCE EFFECT ---------- */
+/* ---------------------------------------- */
 
 /* Used this source to understand how the bounce-effect worked.
 Link to source: https://www.developerdrive.com/8-simple-css-hover-effects/*/
@@ -89,6 +124,11 @@ Link to source: https://www.developerdrive.com/8-simple-css-hover-effects/*/
 	}
 }
 
+/* ---------------------------------------- */
+/* -------- RESPONSIVE FOR MOBILE --------- */
+/* ---------------------------------------- */
+
+/* Responsive background img for mobile devices */
 @media only screen and (max-width: 1100px) {
     #videoContainer {
         display: none;
@@ -111,6 +151,7 @@ Link to source: https://www.developerdrive.com/8-simple-css-hover-effects/*/
     }
 }
 
+/* Responsive header and logo style */
 @media only screen and (max-width: 750px) {
 	.headerElements > h1 {
 		font-size: calc(15px + 0.8vw);
