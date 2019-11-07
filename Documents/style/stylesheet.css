@@ -49,11 +49,15 @@ nav {
     transition: all 0.3s ease-in;
 }
 
+a {
+    color: #5B9BD5;
+}
+
 a:active {
     color: #5B9BD5;
 }
 
-p a:hover, p a:visited:hover{
+a:hover, p a:visited:hover{
     color: #4DC58D;
 }
 
