@@ -14,8 +14,7 @@
 }
 /* Styling for the buttons on image-gallery */
 .btns{
-    position: absolute;
-    pointer-events: auto;   
+    position: absolute; 
     top: 50%;
 }
 #prevBtn{
