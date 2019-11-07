@@ -41,15 +41,11 @@
   	background-position: top 3px left 4px;
 }	
 
-@media only screen and (max-width: 920px){
+@media only screen and (max-width: 1000px){
 	/* Make the grid to 1 column */
 	#modulHolder {
 		grid-template-columns: 1fr;
 		justify-content: center;
-	}
-	/* Make content wider for smaller res */
-	.modulContent{
-		width: 90%;
 	}
 	/* Image rescaling on samll res */
 	.modulContent > img{
@@ -60,6 +56,7 @@
 		padding: 0 4em 0 5em;
 	}
 	.modulContent ul li {
+		font-size: calc(16px + 0.5vw);
 		text-align: left;
 		background-attachment: 
 		background-position: top 0px left 8px; 
