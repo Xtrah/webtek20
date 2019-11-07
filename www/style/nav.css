@@ -24,11 +24,32 @@ nav{
 	list-style: none;
 }
 .nav-links a{
+	position: relative;
 	color: white;
 	text-decoration: none;
 	margin: 0;
 	font-size: calc(10px + 0.6vw);
+	transition: color .4s ease-out;
 }
+/* LINK HOVER AND UNDERLINE ANIMATION */
+.nav-links a:hover{
+	color: #4DC58D;
+}
+.nav-links a:hover::after{
+	border-color: #4DC58D; 
+	right: 0;
+}
+
+.nav-links a::after{	
+	transition: right .4s cubic-bezier(0,.5,0,1),border-color .4s ease-out;
+  	border-top: 0.1em solid #4DC58D;
+  	content: "";
+  	position: absolute;
+    right: 100%;
+    top: 1.4em;
+    left: 0;
+}
+/* BURGER DESIGN */
 .burger{
 	display: none;
 	cursor: pointer;
@@ -55,9 +76,6 @@ nav{
 @media screen and (max-width:1100px){
 	body{
 		overflow-x: hidden;
-	}
-	a:hover{
-		color: #4DC58D;
 	}
 	nav{
 		flex-direction: row;
