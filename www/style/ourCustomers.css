@@ -10,11 +10,13 @@
 /* Targets the names in the testimonials */
 .testimonials>.textWrapper>h3 {
     color: black;
-    margin-top: 45px;
+    margin-top: 1em;
     font-weight: bold;
     width: 100%;
     font-size: 100%;
 }
+
+
 
 
 
@@ -129,6 +131,7 @@
     /* Flex-grow makes the content fit so that the buttons stays on the bottom */
     flex-grow: 1;
     width: 100%;
+    margin-top: 30px;
 }
 
 /* ----------------------------- */
