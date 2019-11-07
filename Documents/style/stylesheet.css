@@ -49,12 +49,16 @@ nav {
     transition: all 0.3s ease-in;
 }
 
-a:hover {
+a:active {
+    color: #5B9BD5;
+}
+
+p a:hover, p a:visited:hover{
     color: #4DC58D;
 }
 
-a:active {
-    color: #5B9BD5;
+p a:visited {
+    color: rgb(51, 133, 95);
 }
 
 /* burger animation upon click */
