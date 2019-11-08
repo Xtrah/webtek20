@@ -61,7 +61,7 @@
             <div id="darkOverlay"></div>
             <img src="./img/frontPage/hasselTransparent.png" type="image">
             <!-- Main claim/assertion -->
-            <h1>Tittel tittel på sånn ca sju ord</h1>
+            <h1>Vi tilbyr det beste som kan tilbys</h1>
             <!-- Subclaim -->
             <h3>Underpåstand som skal overbevise de med penger i lomma</h3>
             <!-- Button anchored to next section -->
@@ -76,7 +76,6 @@
     <!-- |||||||||| NAVBAR |||||||||| -->
     <!-- ---------------------------- -->
     <nav>
-        <a href="#frontPage"><img id="topLogo" src="./img/bracketLogo.png" type="image"></a>
         <ul class="nav-links">
             <li><a href="#whatWeOffer">What We Offer</a></li>
             <li><a href="#ourCustomers">Our Customers</a></li>
@@ -285,11 +284,11 @@
              <!-- Graphic of pylon containing contact form -->
             <div id="contactUsPylon">
                 <!-- form -->
-                <form action="answer.html">
+                <form action="answer.html" onsubmit="return false">
                     <div>
                         <label for="name">Name</label>
                         <br>
-                        <input type="text" id="name" name="name" pattern="[A-Za-z\s]{1,}" required> <!-- Only make it possible to write letters, space and atleast one character -->
+                        <input type="text" id="name" name="name" pattern="[A-Za-z\s]{1,}" required>
                         <br>
 
                     </div>
@@ -305,7 +304,6 @@
                         <label for="telephone">Telephone</label>
                         <br>
                         <input type="tel" id="telephone" name="telephone" pattern="[0-9]{8}" required>
-                        <!-- Pattern for mobile phone number -->
                         <br>
 
                     </div>
@@ -317,6 +315,7 @@
                     </div>
                     <div class="submit">
                         <label for="submit">
+                            <!-- THIS SHOULD BE INPUT TYPE BUTTON. DEACTIVATED FOR TESTING PURPOSES -->
                             <input type="submit" id="submit" value="Send">
                         </label>
                     </div>
