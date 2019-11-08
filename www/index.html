@@ -284,12 +284,13 @@
             <h1>Contact Us</h1>
              <!-- Graphic of pylon containing contact form -->
             <div id="contactUsPylon">
-                <!-- form -->
-                <form action="answer.html">
+                <!-- form with onsubmit removed for experimental purposes-->
+                <form action="answer.html" onsubmit="return false">
                     <div>
                         <label for="name">Name</label>
                         <br>
-                        <input type="text" id="name" name="name" pattern="[A-Za-z\s]{1,}" required> <!-- Only make it possible to write letters, space and atleast one character -->
+                        <!-- Only make it possible to write letters, space and atleast one character -->
+                        <input type="text" id="name" name="name" pattern="[A-Za-z\s]{1,}" required> 
                         <br>
 
                     </div>
@@ -304,8 +305,8 @@
                     <div>
                         <label for="telephone">Telephone</label>
                         <br>
-                        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{8}" required>
                         <!-- Pattern for mobile phone number -->
+                        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{8}" required>
                         <br>
 
                     </div>
