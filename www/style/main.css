@@ -1,3 +1,15 @@
+/* IMPORTING CUSTOM STYLESHEETS */
+@import url("loadingScreen.css"); 
+@import url("frontPage.css");
+@import url("nav.css");
+@import url("whatWeOffer.css");
+@import url("ourCustomers.css");
+@import url("gallery.css");
+@import url("ourBusiness.css");
+@import url("contactUs.css");
+@import url("footer.css");
+
+
 *{
 	margin: 0;
 	padding: 0;
