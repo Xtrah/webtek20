@@ -1,5 +1,7 @@
+/* Deviding the screen and making a background picture that cover the whole site */
+
 div#contactus{
-  background-image: url("../img/formBackground.jpg");
+    background-image: url("../img/formBackground.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 
@@ -17,19 +19,19 @@ div#contactus{
     color: white;
     text-shadow: black 2px 2px 2px;
 
-    grid-column: 2/3;
+    grid-column: 2/3; /*Placing the header in the center of the screen*/
     grid-row: 1/2;
 
 
 
-    display:table-cell; 
+    display:table-cell;  /* Virtcally centering the header. Code from: https://stackoverflow.com/questions/20562860/how-do-i-vertically-center-an-h1-in-a-div/20563075*/
     vertical-align:middle
 }
 
 div#contactUsPylon{
     background-image: url("../img/FormPylon.png");
     background-repeat: no-repeat;
-    background-size: 100% 140vh;
+    background-size: 100% 140vh; /*140vh in height because we have to stretch the picture*/
     grid-column: 2/3;
     grid-row: 2/3;
 
@@ -50,13 +52,11 @@ div#contactUsPylon form{
 div#contactUsPylon div{
     height: 15%;
     width: 100%;
-    /* margin-top: 1%; */
     font-size: 1em;
 
 }
 
 div#contactUsPylon form input, div#contactUsPylon form textarea{
-    /* margin: 1vh 0; */
     width: 100%;
     padding: 1vh;
 	resize: none;
