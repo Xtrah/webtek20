@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- favicon -->
     <link rel="icon" type="image/png" href="img/hsFavicon.png">
     <!-- common stylesheet -->
@@ -28,15 +27,15 @@
     
     All sections are wrapped by a section-tag. <section></section>
     All but one section (gallery) have a h1-tag that contains the title of the section.
-
-    All id's and classes should be self explanitory, but we have inluded some comments to clarify possible misunderstandings.
+    All IDs and classes should be self explanatory. Comments will clarify.
 -->
 
 
 <body>
-    <!-- Div containing loading screen -->
+    <!-- ------------------------------------ -->
+    <!-- |||||||||| LOADING SCREEN |||||||||| -->
+    <!-- ------------------------------------ -->
     <div id="loadingScreen" class="">
-        <!-- div containing all the icon parts of the loading screen -->
         <div id="loadingIconContainer">
             <img id="leftBrack" class="loadingImg" src="./img/leftBrack.png" alt="left bracket">
             <img id="midLine" class="loadingImg" src="./img/midLine.png" alt="middle line">
@@ -76,6 +75,7 @@
     <!-- |||||||||| NAVBAR |||||||||| -->
     <!-- ---------------------------- -->
     <nav>
+        <!-- Logo link that sends the user to frontPage -->
         <a href="#frontPage"><img id="topLogo" src="./img/bracketLogo.png" type="image"></a>
         <ul class="nav-links">
             <li><a href="#whatWeOffer">What We Offer</a></li>
@@ -327,8 +327,7 @@
         </div>
     </section>
 
-    <!-- Footer (injected with JS) -->
-    <footer></footer>
+    <footer><!-- injected with JS --></footer>
     <!-- Scripts -->
     <script type="module" src="script/gallery.js"></script>
     <script type="module" src="script/navBurger.js"></script>
