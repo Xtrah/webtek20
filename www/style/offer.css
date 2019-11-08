@@ -34,7 +34,6 @@
 /* List with custom bullet points */
 .modulContent ul li {
 	word-wrap: break-word;
-	word-break: break-all;
     border-bottom-style: none;
     border-color: #ccc;
     margin: 5% 0;
