@@ -6,15 +6,19 @@
 	margin: 3%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-	justify-content: center;
+	justify-content: start;
 	grid-gap: 2%;
 }
 /* How every module section should look */
 .modulContent { 
+	align-self: start;
 	width: 100%;
+	min-height: 0;
+	min-width: 0;
 	border-radius: 20px;
 	text-align: center;
 	margin: auto;
+	margin-top: 0;
 }
 /* Images within the modules */
 .modulContent > img{
@@ -29,6 +33,8 @@
 
 /* List with custom bullet points */
 .modulContent ul li {
+	word-wrap: break-word;
+	word-break: break-all;
     border-bottom-style: none;
     border-color: #ccc;
     margin: 5% 0;
