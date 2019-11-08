@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- favicon -->
     <link rel="icon" type="image/png" href="img/hsFavicon.png">
     <!-- common stylesheet -->
@@ -28,19 +27,19 @@
     
     All sections are wrapped by a section-tag. <section></section>
     All but one section (gallery) have a h1-tag that contains the title of the section.
-
-    All id's and classes should be self explanitory, but we have inluded some comments to clarify possible misunderstandings.
+    All IDs and classes should be self explanatory. Comments will clarify.
 -->
 
 
 <body>
-    <!-- Div containing loading screen -->
+    <!-- ------------------------------------ -->
+    <!-- |||||||||| LOADING SCREEN |||||||||| -->
+    <!-- ------------------------------------ -->
     <div id="loadingScreen" class="">
-        <!-- div containing all the icon parts of the loading screen -->
         <div id="loadingIconContainer">
-            <img id="leftBrack" class="loadingImg" src="./img/leftBrack.png" alt="left bracket">
-            <img id="midLine" class="loadingImg" src="./img/midLine.png" alt="middle line">
-            <img id="rightBrack" class="loadingImg" src="./img/rightBrack.png" alt="right bracket">
+            <img id="leftBrack" class="loadingImg" src="img/loadingScreen/leftBrack.png" alt="left bracket">
+            <img id="midLine" class="loadingImg" src="img/loadingScreen/midLine.png" alt="middle line">
+            <img id="rightBrack" class="loadingImg" src="img/loadingScreen/rightBrack.png" alt="right bracket">
         </div>
     </div>      
     <!-- -------------------------------- -->
@@ -66,7 +65,7 @@
             <h3>Be competetive with state of the art soultions.</h3>
             <!-- Button anchored to next section -->
             <a id="downBtn" href="#whatWeOffer">
-                <img src="img/frontPage/Arrow.png">
+                <img src="img/frontPage/arrow.png">
             </a>
         </div>
         
@@ -76,7 +75,8 @@
     <!-- |||||||||| NAVBAR |||||||||| -->
     <!-- ---------------------------- -->
     <nav>
-        <a href="#frontPage"><img id="topLogo" src="./img/bracketLogo.png" type="image"></a>
+        <!-- Logo link that sends the user to frontPage -->
+        <a href="#frontPage"><img id="topLogo" src="img/frontPage/bracketLogo.png" type="image"></a>
         <ul class="nav-links">
             <li><a href="#whatWeOffer">What We Offer</a></li>
             <li><a href="#ourCustomers">Our Customers</a></li>
@@ -161,7 +161,7 @@
                 <!-- Testimonial image wrapper -->
                 <div class="testimonialsImgWrapper">
                     <!-- Image of logo -->
-                    <img src="img/hyundaiLogo.jpg" alt="hyundaiLogo" class="testimonialImg">
+                    <img src="img/ourCustomers/hyundaiLogo.jpg" alt="hyundai logo" class="testimonialImg">
                 </div>
                 <!-- Textwrapper that contains all the text in the div besides the button text -->
                 <div class="textWrapper">
@@ -176,13 +176,11 @@
                     </ul>
                 </div>
                 <!-- Button linking to google maps destination -->
-                <a href='https://goo.gl/maps/cZMAtM4xaeoNsazeA' target="blank_" class="testimonialsButtons"> <img class="iconMarker" src="./img/stedIcon.png" alt=""> See for yourself</a>
+                <a href='https://goo.gl/maps/cZMAtM4xaeoNsazeA' target="blank_" class="testimonialsButtons"> <img class="iconMarker" src="img/ourCustomers/locationIcon.png" alt="location icon"> See for yourself</a>
             </div>
         <div class="testimonials">
             <div class="testimonialsImgWrapper">
-
-              <img src="img/CG_logo_BV_original.png" alt="centralkgaragenLogo" class="testimonialImg">
-
+              <img src="img/ourCustomers/centralgaragenLogo.png" alt="central garagen logo" class="testimonialImg">
             </div>
             <div class="textWrapper">
                 <h3 class="testimonialName">Centralgaragen AS</h3>
@@ -193,12 +191,11 @@
                 <li>Webshop</li>
             </ul>
             </div>
-            <a href='https://goo.gl/maps/zyhcHz9oLutgUutdA' target="blank_" class="testimonialsButtons"> <img class="iconMarker" src="./img/stedIcon.png" alt=""> See for yourself</a>
+            <a href='https://goo.gl/maps/zyhcHz9oLutgUutdA' target="blank_" class="testimonialsButtons"> <img class="iconMarker" src="img/ourCustomers/locationIcon.png" alt="location icon"> See for yourself</a>
         </div>
         <div class="testimonials">
             <div class="testimonialsImgWrapper">
-
-                <img src="img/sven-kvia-logo.svg" alt="svenKvieLogo"class="testimonialImg">
+                <img src="img/ourCustomers/svenkviaLogo.svg" alt="sven kvia logo"class="testimonialImg">
             </div>
             <div class="textWrapper">
                 <h3 class="testimonialName">Sven Kvia AS</h3>
@@ -211,16 +208,16 @@
             </ul>
             </div>
             
-            <a href='https://goo.gl/maps/MFWjNDtxkui1PNUV9' target="blank_" class="testimonialsButtons"> <img class="iconMarker" src="./img/stedIcon.png" alt=""> See for yourself</a>
+            <a href='https://goo.gl/maps/MFWjNDtxkui1PNUV9' target="blank_" class="testimonialsButtons"> <img class="iconMarker" src="img/ourCustomers/locationIcon.png" alt="location icon"> See for yourself</a>
         </div>
         <div class="testimonials">
             <div class="testimonialsImgWrapper">
 
-                <img src="img/mobile-logo-v2.svg" alt="mobileLogo"class="testimonialImg">
+                <img src="img/ourCustomers/mobileLogo.svg" alt="mobile logo"class="testimonialImg">
             </div>
             <div class="textWrapper">
                 <h3 class="testimonialName">Mobile AS avd Ensjø</h3>
-            <p class="testimonialAbout">Hyundai and Honda in Oslo </p>
+            <p class="testimonialAbout">Hyundai and Honda in Oslo</p>
             <h3 class="testimonialweHaveTitle">We have:</h3>
             <ul class="testimonialHasList">
                 <li>Pylons</li>
@@ -228,7 +225,7 @@
             </ul>
             </div>
             
-            <a href='https://goo.gl/maps/hZWhUTVdp7QBqgx96' target="blank_" class="testimonialsButtons"> <img class="iconMarker" src="./img/stedIcon.png" alt=""> See for yourself</a>
+            <a href='https://goo.gl/maps/hZWhUTVdp7QBqgx96' target="blank_" class="testimonialsButtons"> <img class="iconMarker" src="img/ourCustomers/locationIcon.png" alt="location icon"> See for yourself</a>
         </div>
         
     </section>
@@ -273,7 +270,7 @@
                 management of <strong>your network</strong>.
             </p>
             <!-- Image of pylon -->
-            <img src="img/our_business/ourBusiness.png" alt="product">
+            <img src="img/ourBusiness/ourBusiness.png" alt="product">
         </div>
     </section>
 
@@ -327,8 +324,7 @@
         </div>
     </section>
 
-    <!-- Footer (injected with JS) -->
-    <footer></footer>
+    <footer><!-- injected with JS --></footer>
     <!-- Scripts -->
     <script type="module" src="script/gallery.js"></script>
     <script type="module" src="script/navBurger.js"></script>
