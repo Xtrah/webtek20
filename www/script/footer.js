@@ -3,7 +3,7 @@ var footerOne = document.createElement("div")
 var footerTwo = document.createElement("div")
 var pOne = document.createElement("h3")
 var pTwo = document.createElement("h3")
-var pOneText = document.createTextNode("Vigbjørn Hassel : +47 987 65 432")
+var pOneText = document.createTextNode("Vigbjørn Hassel Vaage : +47 987 65 432")
 var pTwoText = document.createTextNode("©2019 Hassel Software AS")
 
 // var footerOneContent = document.createTextNode("Vigbjørn Hassel : +47 987 65 432")
