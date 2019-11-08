@@ -49,7 +49,7 @@
     <section id="frontPage">
         <!-- Front page for mobile -->
         <div id="mobileFP">
-            <img src="./img/formBackground.jpg">
+            <img src="./img/frontPage/mobileFP.jpg">
         </div>
         <div class="headerElements">
             <div id="videoContainer">
@@ -285,7 +285,7 @@
              <!-- Graphic of pylon containing contact form -->
             <div id="contactUsPylon">
                 <!-- form with onsubmit removed for experimental purposes-->
-                <form action="answer.html" onsubmit="return false">
+                <form action="answer.html" id="contactUsForm">
                     <div>
                         <label for="name">Name</label>
                         <br>
@@ -318,7 +318,7 @@
                     </div>
                     <div class="submit">
                         <label for="submit">
-                            <input type="submit" id="submit" value="Send">
+                            <input type="submit" id="submitButton" value="Send">
                         </label>
                     </div>
                 </form>
@@ -333,6 +333,7 @@
     <script type="module" src="script/navBurger.js"></script>
     <script src="script/footer.js"></script>
     <script type="module" src="script/loadingScreen.js"></script>
+    <script src="script/contactUs.js"></script>
 </body>
 
 </html>
