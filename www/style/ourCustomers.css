@@ -114,7 +114,7 @@
     /* Overflow: hidden to hide possible overflows from the images */
     overflow: hidden;
     transition: 100ms;
-    background-image: url(img/ourCustomers/hyundaiLogo.jpg);
+    background-image: url(../img/ourCustomers/hyundaiLogo.jpg);
     padding: 0.5em;
 }
 .testimonialsImgWrapper img{
