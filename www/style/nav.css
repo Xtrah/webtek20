@@ -35,20 +35,22 @@ nav{
 .nav-links a:hover{
 	color: #4DC58D;
 }
-.nav-links a:hover::after{
-	border-color: #4DC58D; 
-	right: 0;
-}
-
 .nav-links a::after{	
-	transition: right .4s cubic-bezier(0,.5,0,1),border-color .4s ease-out;
+	transition: .4s cubic-bezier(0,.5,0,1),border-color .4s ease-out;
   	border-top: 0.1em solid #4DC58D;
   	content: "";
   	position: absolute;
-    right: 100%;
-    top: 1.4em;
-    left: 0;
+  	width: 0%;
+  	top: 100%;
+    left: 50%;
 }
+.nav-links a:hover::after{
+	width: 90%;
+	border-color: #4DC58D; 
+	left: 5%;
+	transition: 0.2s;
+}
+
 /* BURGER DESIGN */
 .burger{
 	display: none;
@@ -72,8 +74,28 @@ nav{
 .toggle .line3{
 	transform: rotate(45deg) translate(-5px, -6px);
 }
+/* HASSEL LOGO BRACKETS TO THE TOP ICON*/
+#topLogo {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	margin-left: 1%;
+	width: calc(25px + 0.5vw);
+	top: 45%;
+	transition: 0.3s;
+}
 
+#topLogo:hover {
+	transform: scale(1.2);
+}
 @media screen and (max-width:1100px){
+	#topLogo {
+		position: absolute;
+		left: 0;
+		margin-left: 3%;
+		width: calc(25px + 0.5vw);
+		top: 30%;
+	}
 	body{
 		overflow-x: hidden;
 	}
