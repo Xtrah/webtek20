@@ -22,9 +22,8 @@
 
 
 <body>
-    <!-- ------------------------------------ -->
     <!-- |||||||||| LOADING SCREEN |||||||||| -->
-    <!-- ------------------------------------ -->
+
     <div id="loadingScreen" class="">
         <div id="loadingIconContainer">
             <img id="leftBrack" class="loadingImg" src="img/loadingScreen/leftBrack.png" alt="left bracket">
@@ -32,9 +31,9 @@
             <img id="rightBrack" class="loadingImg" src="img/loadingScreen/rightBrack.png" alt="right bracket">
         </div>
     </div>
-    <!-- -------------------------------- -->
+
     <!-- |||||||||| FRONT PAGE |||||||||| -->
-    <!-- -------------------------------- -->
+    
     <section id="frontPage">
 
         <!-- Front page for mobile -->
@@ -43,7 +42,7 @@
         <div class="headerElements">
             <div id="videoContainer">
                 <video autoplay loop muted preload>
-                    <source src="video/HS.mp4" type="video/mp4" alt="Product visualized">
+                    <source src="video/HS.mp4" type="video/mp4">
                 </video>
             </div>
             <!-- Overlay to make the background image/video darker -->
@@ -61,12 +60,12 @@
 
     </section>
 
-    <!-- ---------------------------- -->
+
     <!-- |||||||||| NAVBAR |||||||||| -->
-    <!-- ---------------------------- -->
+
     <nav>
         <!-- Logo link that sends the user to frontPage -->
-        <a href="#frontPage"><img id="topLogo" src="img/frontPage/bracketLogo.png" type="image"></a>
+        <a href="#frontPage"><img id="topLogo" src="img/frontPage/bracketLogo.png" alt="company logo"></a>
         <ul class="nav-links">
             <li><a href="#whatWeOffer">What We Offer</a></li>
             <li><a href="#ourCustomers">Our Customers</a></li>
@@ -82,9 +81,9 @@
         </div>
     </nav>
 
-    <!-- ----------------------------------- -->
+
     <!-- |||||||||| WHAT WE OFFER |||||||||| -->
-    <!-- ----------------------------------- -->
+
     <section id="whatWeOffer">
         <h1>What We Offer</h1>
         <h2>Choose one or more modules</h2>
@@ -92,7 +91,7 @@
         <div id="modulHolder">
             <!-- Every module should contain a custom icon image, a title and a list of specs -->
             <div class="modulContent">
-                <img src="img/whatWeOffer/pylonModuleIcon.png">
+                <img src="img/whatWeOffer/pylonModuleIcon.png" alt="pylon image">
                 <h3>Pylon</h3>
                 <!-- List of info about each feature/solution that the client offers -->
                 <ul>
@@ -102,7 +101,7 @@
                 </ul>
             </div>
             <div class="modulContent">
-                <img src="img/whatWeOffer/testdriveModuleIcon.png">
+                <img src="img/whatWeOffer/testdriveModuleIcon.png" alt="test driv image">
                 <h3>Test-driving</h3>
                 <ul>
                     <li>Let your customers book test drives from anywhere</li>
@@ -111,7 +110,7 @@
                 </ul>
             </div>
             <div class="modulContent">
-                <img src="img/whatWeOffer/reservationModuleIcon.png">
+                <img src="img/whatWeOffer/reservationModuleIcon.png" alt="reservation image">
                 <h3>Reservations</h3>
                 <ul>
                     <li>Let your customers pre-order a car from their own couch</li>
@@ -120,7 +119,7 @@
                 </ul>
             </div>
             <div class="modulContent">
-                <img src="img/whatWeOffer/onlineModuleIcon.png">
+                <img src="img/whatWeOffer/onlineModuleIcon.png" alt="online store image">
                 <h3>Online Store</h3>
                 <ul>
                     <li>Showcase your whole product line</li>
@@ -129,7 +128,7 @@
                 </ul>
             </div>
             <div class="modulContent">
-                <img src="img/whatWeOffer/adminModuleIcon.png">
+                <img src="img/whatWeOffer/adminModuleIcon.png" alt="administration module image">
                 <h3>Administration</h3>
                 <ul>
                     <li>Update information with one click, and push it to your whole network</li>
@@ -140,9 +139,9 @@
         </div>
     </section>
 
-    <!-- ------------------------------------------- -->
+
     <!-- |||||||||| Our customers section |||||||||| -->
-    <!-- ------------------------------------------- -->
+
     <section id="ourCustomers">
         <!-- Section title -->
         <h1 id="ourCustomersTitle">Our Customers</h1>
@@ -221,9 +220,9 @@
 
     </section>
 
-    <!-- ----------------------------- -->
+
     <!-- |||||||||| GALLERY |||||||||| -->
-    <!-- ----------------------------- -->
+
     <section id="gallery">
         <div class="carousel-container">
             <div class="carousel-slide">
@@ -243,9 +242,9 @@
 
     </section>
 
-    <!-- ---------------------------------- -->
+
     <!-- |||||||||| OUR BUSINESS |||||||||| -->
-    <!-- ---------------------------------- -->
+
     <section id="ourBusiness">
         <h1>Our Business</h1>
         <div class="main_ourBusiness">
@@ -265,9 +264,9 @@
         </div>
     </section>
 
-    <!-- -------------------------------- -->
+
     <!-- |||||||||| CONTACT US |||||||||| -->
-    <!-- -------------------------------- -->
+
     <section id="contactUs">
         <div id="contactus">
             <h1>Contact Us</h1>
@@ -281,7 +280,6 @@
                         <!-- Only make it possible to write letters, space and atleast one character -->
                         <input type="text" id="name" name="name" pattern="[A-Za-z\s]{1,}" required>
                         <br>
-
                     </div>
 
                     <div>
@@ -306,7 +304,7 @@
                         <br>
                     </div>
                     <div class="submit">
-                        <label for="submit">
+                        <label for="submitButton">
                             <input type="submit" id="submitButton" value="Send">
                         </label>
                     </div>

@@ -34,7 +34,7 @@ body{
 p,h1,h2,h3,li,b,strong,link,a {
 	color: white;
 	font-family: 'Poppins', sans-serif;
-	font-weight: 300i;
+	font-weight: 300;
 	font-size:calc(12px + 0.5vw);
 }
 
