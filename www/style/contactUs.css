@@ -1,7 +1,7 @@
 /* Deviding the screen and making a background picture that cover the whole site */
 
 div#contactus{
-    background-image: url("../img/formBackground.jpg");
+    background-image: url("../img/contactUs/formBackground.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 
@@ -29,7 +29,7 @@ div#contactus{
 }
 
 div#contactUsPylon{
-    background-image: url("../img/FormPylon.png");
+    background-image: url("../img/contactUs/FormPylon.png");
     background-repeat: no-repeat;
     background-size: 100% 140vh; /*140vh in height because we have to stretch the picture*/
     grid-column: 2/3;
