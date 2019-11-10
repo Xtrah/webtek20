@@ -25,13 +25,14 @@
 	width: 60%;
 }
 
+
+
+/* LIST STYLES: CUSTOM BULLET POINTS ETC */
 .modulContent ul{
 	list-style: none;
 	display: inline-block;
 	padding: 0 1em 0 1em;
 }
-
-/* List with custom bullet points */
 .modulContent ul li {
 	word-wrap: break-word;
     border-bottom-style: none;
@@ -46,6 +47,7 @@
   	background-position: top 3px left 4px;
 }	
 
+/* Device responsive styling */
 @media only screen and (max-width: 1000px){
 	/* Make the grid to 1 column */
 	#modulHolder {
