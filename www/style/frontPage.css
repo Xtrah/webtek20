@@ -96,9 +96,13 @@
 #downBtn:focus {
 	outline: none;
 }
+#downBtn{
+	transition: 200ms;
+}
 #downBtn:hover{
 	cursor: pointer;
-    filter: invert(30%) sepia(80%) saturate(5000%) hue-rotate(98deg) brightness(100%) contrast(50%);
+	filter: invert(30%) sepia(80%) saturate(5000%) hue-rotate(98deg) brightness(100%) contrast(50%);
+	transition: 200ms;
 }
 
 
