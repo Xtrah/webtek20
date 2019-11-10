@@ -80,7 +80,7 @@
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 3vh 5px 0 5px 0;
+    padding: 3vh 5px 0 5px;
 }
 
 /* ----- TESTIMONIALS ----- */
