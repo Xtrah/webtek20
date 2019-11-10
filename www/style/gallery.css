@@ -16,10 +16,12 @@
 .btns{
     position: absolute; 
     top: 50%;
+    transition: 150ms;
 }
 .btns:hover{
     cursor: pointer;
     filter: invert(30%) sepia(80%) saturate(5000%) hue-rotate(98deg) brightness(100%) contrast(50%);
+    transition: 150ms;
 }
 
 #prevBtn{
