@@ -11,3 +11,5 @@
 	 navSlide()
 	 gallery()
  })  
+
+ // Inspiration for this loading screen from this tutorial: https://www.youtube.com/watch?v=NZNhuzyeD-Y&t=904s by the Dev Ed youTube channel
