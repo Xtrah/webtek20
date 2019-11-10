@@ -44,6 +44,7 @@
     height: 102px;
     width: 102px;
     box-shadow: 0px 0px 10px 1px;
+    cursor: pointer;
 }
 
 /* Hover animation for testimonial-buttons */
