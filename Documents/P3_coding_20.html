@@ -72,6 +72,11 @@
                     organizational scheme and list of files and folders has some changes which we will explain in detail
                     below.
                 </p>
+                <h3>Responsive design</h3>
+                <p>
+                    Tackling the responsiveness needed to serve up a good website was a hard challenge at first. Some of us started designing mobile first, and some forgot. The result was quite interesting, and a wake up call for future projects. Designing for mobile first is essential in production of responsive websites. An example of this was the changes needed in the gallery section, where we first started designing for desktop, and were punished when we moved over to mobile.  
+
+                </p>
                 <h3>New features</h3>
                 <p>
                     <b>Scroll to top:</b><br>
@@ -117,7 +122,6 @@
                 </p>
                 <h3>What We Offer</h3>
                 <p>
-
                     The What We Offer section is mostly unchanged. The exceptions are font size, general scaling, text content and positioning of the
                     bullet points. The font size and weight was tweaked to be more readable. The custom bullet points were
                     positioned better and the general scaling of elements were tweaked to be more responsive and fill the page better.
@@ -173,14 +177,15 @@
                 </p>
                 <h3>Changes to CSS styling</h3>
                 <p>
-                    <b>Navbar: </b>Added underline animation on hover.
+                    <b>Navbar: </b>Added underline animation on hover.<br><br>
+                    We chose to have separate stylesheets for every section and imported all css stylesheets to main.
                 </p>
                 <h3>Javascript additions</h3>
                 <p>
                     <b>Note about modules: </b>We chose to implement modules to learn about how these work and how you can import functions to
                     other modules with javaScript. We know this is not supported in most browsers yet, but we chose to implement it anyway because
                     we wanted to have different functions in several javaScript files instead of one entire. We do see that this might be a bit verbose.<br><br> 
-                    <b>loadingScreen.js: </b>Created loading function to resolve slight loading time issues. This is also to radiate professionalism. This also works as a moduel to call functions that need to be called after load so that responsiveness
+                    <b>loadingScreen.js: </b>Created loading function to resolve slight loading time issues. This is also to radiate professionalism. This also works as a module to call functions that need to be called after load so that responsiveness
                     of injected elements work better<br><br>
                     <b>navBurger.js: </b>The navBurger javaScript toggles and adds animation to the navigation bar elements. It also toggles the navBurger mobile resolution. This is also one of the modules called in loadingScreen.js<br><br>
                     <b>gallery.js: </b>The gallery is injected to fulfill the responsivity requirement. The javaScript function will listen
@@ -347,7 +352,10 @@
                     addition we used GIT to create issues and requests for everyone to work on. Our git-repository
                     should be seen as a changelog and will document our work division table.
                 </p>
-
+                <p>
+                    Also for every section there is a stylesheet that has been imported into the main stylesheet. The
+                    same people working with the sections have made the corresponding stylesheets.
+                </p>
                 <table>
                     <tr id="first">
                         <th>File/section</th>
@@ -409,15 +417,42 @@
                     </tr>
 
                     <tr>
-                        <th>app.js</th>
-                        <th>A JavaScript file including code for a navBurger and other features.</th>
-                        <th>All</th>
+                        <th>*loadingScreen.js</th>
+                        <th>A JavaScript file that triggers animation on load of page and runs the gallery and footer function calls.</th>
+                        <th>Livia</th>
                         <th>03.11.2019</th>
                     </tr>
 
                     <tr>
+                        <th>navBurger.js</th>
+                        <th>A JavaScript file including code for a navBurger and other features.</th>
+                        <th>Vemund</th>
+                        <th>03.11.2019</th>
+                    </tr>
+
+                    <tr>
+                        <th>*gallery.js</th>
+                        <th>A JavaScript file injecting the gallery with corresponding viewport sizes.</th>
+                        <th>Vemund</th>
+                        <th>03.11.2019</th>
+                    </tr>
+
+                    <tr>
+                        <th>contactUs.js</th>
+                        <th>A JavaScript file checking validity of input to alert user and reset form.</th>
+                        <th>Livia</th>
+                        <th>03.11.2019</th>
+                    </tr>
+
+                    <tr>
+                        <th>*footer.js</th>
+                        <th>A JavaScript file injecting the footer.</th>
+                        <th>Vemund</th>
+                        <th>03.11.2019</th>
+                    </tr>
+                    <tr>
                         <th>main.css</th>
-                        <th>Styling for the page</th>
+                        <th>General styling for the page</th>
                         <th>All</th>
                         <th>03.11.2019</th>
                     </tr>
@@ -429,7 +464,11 @@
                         <th>04.11.2019</th>
                     </tr>
                 </table>
-
+                <p>
+                    <i><b>*</b> Module<br><br> 
+                    <b>Note on images:</b><br><br>
+                    All images of modules are supplied by the client including logo. Videoes are taken by everyone in the group and all illustrations are made by Livia.
+                </p>
             </section>
 
         </main>
