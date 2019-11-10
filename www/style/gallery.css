@@ -17,6 +17,10 @@
     position: absolute; 
     top: 50%;
 }
+.btns:hover{
+    cursor: pointer;
+}
+
 #prevBtn{
     transform: translateY(-50%);
 }
