@@ -10,7 +10,7 @@ var pTwoText = document.createTextNode("©2019 Hassel Software AS")
 // var footerTwoContent = document.createTextNode("©2019 Hassel Software AS")
 var img = document.createElement("img")
 
-img.src = "img/contactIcon.png"
+img.src = "img/footer/contactIcon.png"
 img.alt = "footerPhoneIcon"
 img.id = "footerImg"
 

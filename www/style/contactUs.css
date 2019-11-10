@@ -1,7 +1,7 @@
 /* Deviding the screen and making a background picture that cover the whole site */
 
 div#contactus{
-    background-image: url("../img/formBackground.jpg");
+    background-image: url("../img/contactUs/formBackground.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 
@@ -24,12 +24,12 @@ div#contactus{
 
 
 
-    display:table-cell;  /* Virtcally centering the header. Code from: https://stackoverflow.com/questions/20562860/how-do-i-vertically-center-an-h1-in-a-div/20563075*/
-    vertical-align:middle
+    display: table-cell;  /* Vertcally centering the header. Code from: https://stackoverflow.com/questions/20562860/how-do-i-vertically-center-an-h1-in-a-div/20563075*/
+    vertical-align: middle;
 }
 
 div#contactUsPylon{
-    background-image: url("../img/FormPylon.png");
+    background-image: url("../img/contactUs/FormPylon.png");
     background-repeat: no-repeat;
     background-size: 100% 140vh; /*140vh in height because we have to stretch the picture*/
     grid-column: 2/3;
@@ -128,7 +128,7 @@ div#contactUsPylon input[type~="submit"]:active {
     }
 
     #contactus h1{
-        font-size:calc(15px + 2vw)
+        font-size:calc(15px + 2vw);
     }
 
 }
