@@ -90,6 +90,11 @@
                     well made loading screen can also radiate professionalism. For example done on <a href="https://www.miksmaster.no/">
                     this</a> website.
                 </p> 
+                <h3>Navbar</h3><br>
+                <p>
+                    Some of the section names changed. Form "About us" to "Our business". Further down in the Our Customers updated 
+                    section this will be adressed.
+                </p>
                 <h3>Front Page</h3>
                 <p>
                     <b>General features:</b><br>
@@ -163,6 +168,24 @@
                     to the right.
                     <br> <br>
                     We also added some frontend validation to the form. This makes sure that the user writes a name, a (phone)number and an email (something including a "@"). 
+                </p>
+                <h3>Changes to CSS styling</h3>
+                <p>
+                    <b>Navbar: </b>Added underline animation on hover.
+                </p>
+                <h3>Javascript additions</h3>
+                <p>
+                    <b>Note about modules: </b>We chose to implement modules to learn about how these work and how you can import functions to
+                    other modules with javaScript. We know this is not supported in most browsers yet, but we chose to implement it anyway because
+                    we wanted to have different functions in several javaScript files instead of one entire. We do see that this might be a bit verbose.<br><br> 
+                    <b>loadingScreen.js: </b>Created loading function to resolve slight loading time issues. This is also to radiate professionalism. This also works as a moduel to call functions that need to be called after load so that responsiveness
+                    of injected elements work better<br><br>
+                    <b>navBurger.js: </b>The navBurger javaScript toggles and adds animation to the navigation bar elements. It also toggles the navBurger mobile resolution. This is also one of the modules called in loadingScreen.js<br><br>
+                    <b>gallery.js: </b>The gallery is injected to fulfill the responsivity requirement. The javaScript function will listen
+                    to viewport sizes and make the gallery slide work through that. This is also one of the modules called in loadingScreen.js<br><br>
+                    <b>contactUs.js: </b>The form is not implemented with JavaScript. Though part of the validation is checked for experimental reasons in contacUs.js so that testers can get validation and an alert when the form is theoretically sent. Also the form clears by being reset wich also gives a professional feel.<br><br>
+                    <b>footer.js: </b>To fulfill the modularity requirement we inject the footer element. Since we have a linear one-page website
+                    this functionality cannot be seen as a whole. Though if the website had several pages this would be modular. 
                 </p>
             </section>
 
